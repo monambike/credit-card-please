@@ -92,6 +92,7 @@
             // 
             miUwu.Name = "miUwu";
             resources.ApplyResources(miUwu, "miUwu");
+            miUwu.Click += miUwu_Click;
             // 
             // miSeparator
             // 
@@ -102,6 +103,7 @@
             // 
             miExit.Name = "miExit";
             resources.ApplyResources(miExit, "miExit");
+            miExit.Click += miExit_Click;
             // 
             // miSettings
             // 

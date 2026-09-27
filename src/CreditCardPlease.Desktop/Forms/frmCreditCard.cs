@@ -22,6 +22,46 @@ namespace CreditCardPlease.Desktop
             CancelCreditCardSubmission();
         }
 
+
+        private void miUwu_Click(object sender, EventArgs e)
+            => MessageBox.Show("uwu", "owo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        private void miExit_Click(object sender, EventArgs e)
+            => Application.Exit();
+
+        private void SetLocalization()
+        {
+            this.Text = Strings.CreditCardWindowTitle;
+
+            lblTitle.Text = Strings.CardFormTitle;
+            lblThanks.Text = Strings.CardFormThanks;
+
+            lblCardNumber.Text = Strings.CardFormCardNumber;
+            lblCardExpirationDate.Text = Strings.CardFormExpirationDate;
+            lblCardSecurityCode.Text = Strings.CardFormSecurityCode;
+            lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
+
+            btnCancel.Text = Strings.CardFormCancel;
+            btnSend.Text = Strings.CardFormSendData;
+        }
+
+        private void miLanguageSystemDefault_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.System);
+
+        private void miLanguageEnglish_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.English);
+
+        private void miLanguagePortuguese_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.Portuguese);
+
+        private static void SetApplicationLanguage(string language)
+        {
+            Properties.Settings.Default.Language = language;
+            Properties.Settings.Default.Save();
+            Application.Restart();
+        }
+
+
         private void SendCreditCardData()
         {
             MessageBox.Show(
@@ -61,38 +101,6 @@ namespace CreditCardPlease.Desktop
             txtCardNumber.Clear();
             txtCardExpirationDate.Clear();
             txtCardSecurityCode.Clear();
-        }
-
-        private void SetLocalization()
-        {
-            this.Text = Strings.CreditCardWindowTitle;
-
-            lblTitle.Text = Strings.CardFormTitle;
-            lblThanks.Text = Strings.CardFormThanks;
-
-            lblCardNumber.Text = Strings.CardFormCardNumber;
-            lblCardExpirationDate.Text = Strings.CardFormExpirationDate;
-            lblCardSecurityCode.Text = Strings.CardFormSecurityCode;
-            lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
-
-            btnCancel.Text = Strings.CardFormCancel;
-            btnSend.Text = Strings.CardFormSendData;
-        }
-
-        private void miLanguageSystemDefault_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.System);
-
-        private void miLanguageEnglish_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.English);
-
-        private void miLanguagePortuguese_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.Portuguese);
-
-        private static void SetApplicationLanguage(string language)
-        {
-            Properties.Settings.Default.Language = language;
-            Properties.Settings.Default.Save();
-            Application.Restart();
         }
 
         private void UpdateLanguageMenu()
