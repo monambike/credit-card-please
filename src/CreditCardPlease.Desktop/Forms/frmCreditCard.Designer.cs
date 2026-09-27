@@ -122,9 +122,11 @@
             // pbImage
             // 
             pbImage.Dock = DockStyle.Fill;
+            pbImage.Image = Properties.Resources.BannerSayori;
             pbImage.Location = new Point(3, 3);
             pbImage.Name = "pbImage";
             pbImage.Size = new Size(391, 403);
+            pbImage.SizeMode = PictureBoxSizeMode.Zoom;
             pbImage.TabIndex = 0;
             pbImage.TabStop = false;
             // 
