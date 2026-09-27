@@ -111,5 +111,14 @@ namespace CreditCardPlease.Desktop
             miLanguageEnglish.Checked = language == Languages.English;
             miLanguagePortuguese.Checked = language == Languages.Portuguese;
         }
+
+        private void miAbout_Click(object sender, EventArgs e)
+            => MessageBox.Show(
+                "Author: @monambike" +
+                "\n" +
+                "\nGitHub Repository: https://github.com/monambike/credit-card-please",
+                "About The App :DD",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Information);
     }
 }

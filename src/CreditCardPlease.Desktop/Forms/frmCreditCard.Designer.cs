@@ -139,6 +139,7 @@
             // 
             miAbout.Name = "miAbout";
             resources.ApplyResources(miAbout, "miAbout");
+            miAbout.Click += miAbout_Click;
             // 
             // tlpBody
             // 
