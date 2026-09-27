@@ -39,7 +39,7 @@
             lblCardNumber = new Label();
             lblCardExpirationDate = new Label();
             lblCardSecurityCode = new Label();
-            lblTip = new Label();
+            lblRequiredFields = new Label();
             lblTitle = new Label();
             lblThanks = new Label();
             lblSeparator = new Label();
@@ -125,7 +125,7 @@
             tlpFields.Controls.Add(lblCardNumber, 0, 0);
             tlpFields.Controls.Add(lblCardExpirationDate, 0, 1);
             tlpFields.Controls.Add(lblCardSecurityCode, 0, 2);
-            tlpFields.Controls.Add(lblTip, 0, 3);
+            tlpFields.Controls.Add(lblRequiredFields, 0, 3);
             tlpFields.Dock = DockStyle.Fill;
             tlpFields.Location = new Point(3, 166);
             tlpFields.Name = "tlpFields";
@@ -204,18 +204,18 @@
             lblCardSecurityCode.Text = "Security Code:";
             lblCardSecurityCode.TextAlign = ContentAlignment.TopRight;
             // 
-            // lblTip
+            // lblRequiredFields
             // 
-            lblTip.AutoSize = true;
-            lblTip.Dock = DockStyle.Fill;
-            lblTip.Font = new Font("Segoe UI", 11F, FontStyle.Italic);
-            lblTip.ForeColor = SystemColors.ControlDarkDark;
-            lblTip.Location = new Point(3, 117);
-            lblTip.Name = "lblTip";
-            lblTip.Size = new Size(118, 40);
-            lblTip.TabIndex = 7;
-            lblTip.Text = "* Required Fields";
-            lblTip.TextAlign = ContentAlignment.MiddleRight;
+            lblRequiredFields.AutoSize = true;
+            lblRequiredFields.Dock = DockStyle.Fill;
+            lblRequiredFields.Font = new Font("Segoe UI", 11F, FontStyle.Italic);
+            lblRequiredFields.ForeColor = SystemColors.ControlDarkDark;
+            lblRequiredFields.Location = new Point(3, 117);
+            lblRequiredFields.Name = "lblRequiredFields";
+            lblRequiredFields.Size = new Size(118, 40);
+            lblRequiredFields.TabIndex = 7;
+            lblRequiredFields.Text = "* Required Fields";
+            lblRequiredFields.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lblTitle
             // 
@@ -285,11 +285,11 @@
             // 
             btnSend.AutoSize = true;
             btnSend.Font = new Font("Segoe UI", 10F);
-            btnSend.Location = new Point(630, 3);
+            btnSend.Location = new Point(628, 3);
             btnSend.Name = "btnSend";
-            btnSend.Size = new Size(80, 29);
+            btnSend.Size = new Size(82, 29);
             btnSend.TabIndex = 7;
-            btnSend.Text = "&Send data";
+            btnSend.Text = "&Send Data";
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
             // 
@@ -329,7 +329,7 @@
         private Label lblCardNumber;
         private Label lblCardExpirationDate;
         private Label lblCardSecurityCode;
-        private Label lblTip;
+        private Label lblRequiredFields;
         private Label lblTitle;
         private Label lblThanks;
         private TableLayoutPanel tlpFooter;

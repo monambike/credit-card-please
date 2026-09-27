@@ -1,3 +1,5 @@
+using CreditCardPlease.Desktop.Resources.Localization;
+
 namespace CreditCardPlease.Desktop
 {
     public partial class frmCreditCard : Form
@@ -5,6 +7,7 @@ namespace CreditCardPlease.Desktop
         public frmCreditCard()
         {
             InitializeComponent();
+            SetLocalization();
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -20,25 +23,34 @@ namespace CreditCardPlease.Desktop
         private void SendCreditCardData()
         {
             MessageBox.Show(
-                $"T-Thank you so much! >\\\\~\\\\<\n\nYour credit card data is in good hands! ❤️",
-                "I can't believe you did that!", MessageBoxButtons.OK);
+                Strings.DialogSendDescription,
+                Strings.DialogSendTitle, MessageBoxButtons.OK);
         }
 
         private void CancelCreditCardSubmission()
         {
             DialogResult result = MessageBox.Show(
-                "Please don't do anything stupid!",
-                "A-are you sure?...",
-                MessageBoxButtons.YesNo);
+                Strings.DialogCancelDescription,
+                Strings.DialogCancelTitle,
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
 
             if (result == DialogResult.Yes)
             {
                 ClearCreditCardFields();
-                MessageBox.Show("Why would you do that? 🥺", ":(", MessageBoxButtons.OK);
+                MessageBox.Show(
+                    Strings.DialogCancelYesDescription,
+                    Strings.DialogCancelYesTitle,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Hand);
             }
             else
             {
-                MessageBox.Show("Phew!! You scared me..", "Omg..", MessageBoxButtons.OK);
+                MessageBox.Show(
+                    Strings.DialogCancelNoDescription,
+                    Strings.DialogCancelNoTitle,
+                    MessageBoxButtons.OK,
+                    MessageBoxIcon.Information);
             }
         }
 
@@ -47,6 +59,22 @@ namespace CreditCardPlease.Desktop
             txtCardNumber.Clear();
             txtCardExpirationDate.Clear();
             txtCardSecurityCode.Clear();
+        }
+
+        private void SetLocalization()
+        {
+            this.Text = Strings.CreditCardWindowTitle;
+
+            lblTitle.Text = Strings.CardFormTitle;
+            lblThanks.Text= Strings.CardFormThanks;
+
+            lblCardNumber.Text = Strings.CardFormCardNumber;
+            lblCardExpirationDate.Text = Strings.CardFormExpirationDate;
+            lblCardSecurityCode.Text = Strings.CardFormSecurityCode;
+            lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
+
+            btnCancel.Text = Strings.CardFormCancel;
+            btnSend.Text = Strings.CardFormSendData;
         }
     }
 }
