@@ -1,3 +1,7 @@
+// Copyright(c) 2024 Vinicius Gabriel Marques de Melo. All rights reserved.
+// Contact: @monambike for more information.
+// For license information, please see the LICENSE file in the root directory.
+
 using CreditCardPlease.Desktop.Constants;
 using CreditCardPlease.Desktop.Resources.Localization;
 
@@ -21,7 +25,6 @@ namespace CreditCardPlease.Desktop
         {
             CancelCreditCardSubmission();
         }
-
 
         private void miUwu_Click(object sender, EventArgs e)
             => MessageBox.Show("uwu", "owo", MessageBoxButtons.OK, MessageBoxIcon.Information);
