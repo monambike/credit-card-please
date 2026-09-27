@@ -15,7 +15,7 @@ The classic Sayori Credit Card meme has become real!
 
 # Download
 
-**Link:** [Download Latest Release](https://github.com/monambike/credit-card-please/releases/download/v1.0.0/win-x64.zip)
+**Link:** [Download Latest Release](https://github.com/monambike/credit-card-please/releases/latest)
 
 _**Note:** If the message "Windows protected you PC" by "Microsoft Defender Smartscreen" shows up, click "More Info" and then "Run Anyway".
 This happens because the app is outside Microsoft Store._
