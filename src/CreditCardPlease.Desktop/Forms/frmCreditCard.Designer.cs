@@ -42,9 +42,10 @@
             lblTip = new Label();
             lblTitle = new Label();
             lblThanks = new Label();
+            lblSeparator = new Label();
             tlpFooter = new TableLayoutPanel();
-            btnSend = new Button();
             btnCancel = new Button();
+            btnSend = new Button();
             tlpMain.SuspendLayout();
             tlpBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
@@ -58,12 +59,14 @@
             tlpMain.ColumnCount = 1;
             tlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpMain.Controls.Add(tlpBody, 0, 0);
-            tlpMain.Controls.Add(tlpFooter, 0, 1);
+            tlpMain.Controls.Add(lblSeparator, 0, 1);
+            tlpMain.Controls.Add(tlpFooter, 0, 2);
             tlpMain.Dock = DockStyle.Fill;
             tlpMain.Location = new Point(0, 0);
             tlpMain.Name = "tlpMain";
-            tlpMain.RowCount = 2;
+            tlpMain.RowCount = 3;
             tlpMain.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
+            tlpMain.RowStyles.Add(new RowStyle(SizeType.Absolute, 1F));
             tlpMain.RowStyles.Add(new RowStyle());
             tlpMain.Size = new Size(800, 450);
             tlpMain.TabIndex = 0;
@@ -81,7 +84,7 @@
             tlpBody.RowCount = 1;
             tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpBody.Size = new Size(794, 403);
+            tlpBody.Size = new Size(794, 402);
             tlpBody.TabIndex = 1;
             // 
             // pbImage
@@ -90,7 +93,7 @@
             pbImage.Image = Properties.Resources.BannerSayori;
             pbImage.Location = new Point(3, 3);
             pbImage.Name = "pbImage";
-            pbImage.Size = new Size(391, 397);
+            pbImage.Size = new Size(391, 396);
             pbImage.SizeMode = PictureBoxSizeMode.Zoom;
             pbImage.TabIndex = 0;
             pbImage.TabStop = false;
@@ -109,7 +112,7 @@
             tlpSubmissionForm.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpSubmissionForm.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpSubmissionForm.RowStyles.Add(new RowStyle());
-            tlpSubmissionForm.Size = new Size(391, 397);
+            tlpSubmissionForm.Size = new Size(391, 396);
             tlpSubmissionForm.TabIndex = 1;
             // 
             // tlpFields
@@ -201,13 +204,13 @@
             // 
             // lblTip
             // 
+            lblTip.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblTip.AutoSize = true;
-            lblTip.Dock = DockStyle.Fill;
             lblTip.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTip.ForeColor = SystemColors.ControlDarkDark;
-            lblTip.Location = new Point(3, 117);
+            lblTip.Location = new Point(3, 138);
             lblTip.Name = "lblTip";
-            lblTip.Size = new Size(186, 40);
+            lblTip.Size = new Size(114, 19);
             lblTip.TabIndex = 7;
             lblTip.Text = "* Required Fields";
             // 
@@ -232,10 +235,19 @@
             lblThanks.Location = new Point(3, 326);
             lblThanks.Name = "lblThanks";
             lblThanks.Padding = new Padding(20);
-            lblThanks.Size = new Size(385, 71);
+            lblThanks.Size = new Size(385, 70);
             lblThanks.TabIndex = 2;
             lblThanks.Text = "T-Thanks!";
             lblThanks.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // lblSeparator
+            // 
+            lblSeparator.BorderStyle = BorderStyle.Fixed3D;
+            lblSeparator.Dock = DockStyle.Fill;
+            lblSeparator.Location = new Point(3, 408);
+            lblSeparator.Name = "lblSeparator";
+            lblSeparator.Size = new Size(794, 1);
+            lblSeparator.TabIndex = 9;
             // 
             // tlpFooter
             // 
@@ -254,17 +266,6 @@
             tlpFooter.Size = new Size(794, 35);
             tlpFooter.TabIndex = 2;
             // 
-            // btnSend
-            // 
-            btnSend.AutoSize = true;
-            btnSend.Font = new Font("Segoe UI", 10F);
-            btnSend.Location = new Point(630, 3);
-            btnSend.Name = "btnSend";
-            btnSend.Size = new Size(80, 29);
-            btnSend.TabIndex = 7;
-            btnSend.Text = "&Send data";
-            btnSend.UseVisualStyleBackColor = true;
-            // 
             // btnCancel
             // 
             btnCancel.AutoSize = true;
@@ -275,6 +276,17 @@
             btnCancel.TabIndex = 8;
             btnCancel.Text = "&Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            // 
+            // btnSend
+            // 
+            btnSend.AutoSize = true;
+            btnSend.Font = new Font("Segoe UI", 10F);
+            btnSend.Location = new Point(630, 3);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(80, 29);
+            btnSend.TabIndex = 7;
+            btnSend.Text = "&Send data";
+            btnSend.UseVisualStyleBackColor = true;
             // 
             // frmCreditCard
             // 
@@ -318,5 +330,6 @@
         private TableLayoutPanel tlpFooter;
         private Button btnCancel;
         private Button btnSend;
+        private Label lblSeparator;
     }
 }
