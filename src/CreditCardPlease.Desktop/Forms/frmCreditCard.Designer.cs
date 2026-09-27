@@ -82,8 +82,7 @@
             tlpBody.Location = new Point(3, 3);
             tlpBody.Name = "tlpBody";
             tlpBody.RowCount = 1;
-            tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
+            tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 100F));
             tlpBody.Size = new Size(794, 402);
             tlpBody.TabIndex = 1;
             // 
@@ -118,8 +117,8 @@
             // tlpFields
             // 
             tlpFields.ColumnCount = 2;
-            tlpFields.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
-            tlpFields.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 50F));
+            tlpFields.ColumnStyles.Add(new ColumnStyle());
+            tlpFields.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
             tlpFields.Controls.Add(txtCardSecurityCode, 1, 2);
             tlpFields.Controls.Add(txtCardExpirationDate, 1, 1);
             tlpFields.Controls.Add(txtCardNumber, 1, 0);
@@ -141,7 +140,7 @@
             // txtCardSecurityCode
             // 
             txtCardSecurityCode.Font = new Font("Segoe UI", 12F);
-            txtCardSecurityCode.Location = new Point(195, 81);
+            txtCardSecurityCode.Location = new Point(127, 81);
             txtCardSecurityCode.MaxLength = 4;
             txtCardSecurityCode.Name = "txtCardSecurityCode";
             txtCardSecurityCode.PlaceholderText = "CVV";
@@ -151,7 +150,7 @@
             // txtCardExpirationDate
             // 
             txtCardExpirationDate.Font = new Font("Segoe UI", 12F);
-            txtCardExpirationDate.Location = new Point(195, 42);
+            txtCardExpirationDate.Location = new Point(127, 42);
             txtCardExpirationDate.MaxLength = 5;
             txtCardExpirationDate.Name = "txtCardExpirationDate";
             txtCardExpirationDate.PlaceholderText = "MM/AA";
@@ -162,11 +161,11 @@
             // 
             txtCardNumber.Dock = DockStyle.Fill;
             txtCardNumber.Font = new Font("Segoe UI", 12F);
-            txtCardNumber.Location = new Point(195, 3);
+            txtCardNumber.Location = new Point(127, 3);
             txtCardNumber.MaxLength = 20;
             txtCardNumber.Name = "txtCardNumber";
             txtCardNumber.PlaceholderText = "1234 5678 9012 3456";
-            txtCardNumber.Size = new Size(187, 29);
+            txtCardNumber.Size = new Size(255, 29);
             txtCardNumber.TabIndex = 0;
             // 
             // lblCardNumber
@@ -176,9 +175,10 @@
             lblCardNumber.Font = new Font("Segoe UI", 12F);
             lblCardNumber.Location = new Point(3, 0);
             lblCardNumber.Name = "lblCardNumber";
-            lblCardNumber.Size = new Size(186, 39);
+            lblCardNumber.Size = new Size(118, 39);
             lblCardNumber.TabIndex = 4;
             lblCardNumber.Text = "Card Number:";
+            lblCardNumber.TextAlign = ContentAlignment.TopRight;
             // 
             // lblCardExpirationDate
             // 
@@ -187,9 +187,10 @@
             lblCardExpirationDate.Font = new Font("Segoe UI", 12F);
             lblCardExpirationDate.Location = new Point(3, 39);
             lblCardExpirationDate.Name = "lblCardExpirationDate";
-            lblCardExpirationDate.Size = new Size(186, 39);
+            lblCardExpirationDate.Size = new Size(118, 39);
             lblCardExpirationDate.TabIndex = 5;
             lblCardExpirationDate.Text = "Expiration Date:";
+            lblCardExpirationDate.TextAlign = ContentAlignment.TopRight;
             // 
             // lblCardSecurityCode
             // 
@@ -198,21 +199,23 @@
             lblCardSecurityCode.Font = new Font("Segoe UI", 12F);
             lblCardSecurityCode.Location = new Point(3, 78);
             lblCardSecurityCode.Name = "lblCardSecurityCode";
-            lblCardSecurityCode.Size = new Size(186, 39);
+            lblCardSecurityCode.Size = new Size(118, 39);
             lblCardSecurityCode.TabIndex = 6;
             lblCardSecurityCode.Text = "Security Code:";
+            lblCardSecurityCode.TextAlign = ContentAlignment.TopRight;
             // 
             // lblTip
             // 
-            lblTip.Anchor = AnchorStyles.Bottom | AnchorStyles.Left;
             lblTip.AutoSize = true;
-            lblTip.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblTip.Dock = DockStyle.Fill;
+            lblTip.Font = new Font("Segoe UI", 11F, FontStyle.Italic);
             lblTip.ForeColor = SystemColors.ControlDarkDark;
-            lblTip.Location = new Point(3, 138);
+            lblTip.Location = new Point(3, 117);
             lblTip.Name = "lblTip";
-            lblTip.Size = new Size(114, 19);
+            lblTip.Size = new Size(118, 40);
             lblTip.TabIndex = 7;
             lblTip.Text = "* Required Fields";
+            lblTip.TextAlign = ContentAlignment.MiddleRight;
             // 
             // lblTitle
             // 
@@ -276,6 +279,7 @@
             btnCancel.TabIndex = 8;
             btnCancel.Text = "&Cancel";
             btnCancel.UseVisualStyleBackColor = true;
+            btnCancel.Click += btnCancel_Click;
             // 
             // btnSend
             // 
@@ -287,6 +291,7 @@
             btnSend.TabIndex = 7;
             btnSend.Text = "&Send data";
             btnSend.UseVisualStyleBackColor = true;
+            btnSend.Click += btnSend_Click;
             // 
             // frmCreditCard
             // 
