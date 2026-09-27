@@ -174,4 +174,22 @@ credit card info, pretty please?</value>
   <data name="DialogCancelYesTitle" xml:space="preserve">
     <value>:( What you've done?...</value>
   </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="MenuLanguage" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="MenuSystemDefault" xml:space="preserve">
+    <value>System Default</value>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="MenuApplication" xml:space="preserve">
+    <value>Application</value>
+  </data>
 </root>

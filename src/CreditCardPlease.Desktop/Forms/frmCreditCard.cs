@@ -12,7 +12,7 @@ namespace CreditCardPlease.Desktop
         public frmCreditCard()
         {
             InitializeComponent();
-            SetLocalization();
+            SetControlsLocalization();
             UpdateLanguageMenu();
         }
 
@@ -32,20 +32,27 @@ namespace CreditCardPlease.Desktop
         private void miExit_Click(object sender, EventArgs e)
             => Application.Exit();
 
-        private void SetLocalization()
+        private void SetControlsLocalization()
         {
             this.Text = Strings.CreditCardWindowTitle;
 
             lblTitle.Text = Strings.CardFormTitle;
             lblThanks.Text = Strings.CardFormThanks;
 
-            lblCardNumber.Text = Strings.CardFormCardNumber;
-            lblCardExpirationDate.Text = Strings.CardFormExpirationDate;
-            lblCardSecurityCode.Text = Strings.CardFormSecurityCode;
+            lblCardNumber.Text = $"{Strings.CardFormCardNumber}:";
+            lblCardExpirationDate.Text = $"{Strings.CardFormExpirationDate}:";
+            lblCardSecurityCode.Text = $"{Strings.CardFormSecurityCode}:";
             lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
 
             btnCancel.Text = Strings.CardFormCancel;
             btnSend.Text = Strings.CardFormSendData;
+
+            miApplication.Text = Strings.MenuApplication;
+            miExit.Text = Strings.MenuExit;
+            miSettings.Text = Strings.MenuSettings;
+            miLanguage.Text = Strings.MenuLanguage;
+            miLanguageSystemDefault.Text = $"({Strings.MenuSystemDefault})";
+            miAbout.Text = Strings.MenuAbout;
         }
 
         private void miLanguageSystemDefault_Click(object sender, EventArgs e)

@@ -174,4 +174,22 @@ dados do cartão de crédito, porfavorzinho?</value>
   <data name="DialogCancelYesTitle" xml:space="preserve">
     <value>:( O que você fez?...</value>
   </data>
+  <data name="MenuAbout" xml:space="preserve">
+    <value>Sobre</value>
+  </data>
+  <data name="MenuSettings" xml:space="preserve">
+    <value>Configurações</value>
+  </data>
+  <data name="MenuLanguage" xml:space="preserve">
+    <value>Idioma</value>
+  </data>
+  <data name="MenuSystemDefault" xml:space="preserve">
+    <value>Padrão do Sistema</value>
+  </data>
+  <data name="MenuExit" xml:space="preserve">
+    <value>Sair</value>
+  </data>
+  <data name="MenuApplication" xml:space="preserve">
+    <value>Aplicativo</value>
+  </data>
 </root>
