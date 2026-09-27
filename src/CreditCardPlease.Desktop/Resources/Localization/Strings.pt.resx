@@ -160,10 +160,10 @@ dados do cartão de crédito, porfavorzinho?</value>
     <value>Campos Obrigatórios</value>
   </data>
   <data name="CardFormSendData" xml:space="preserve">
-    <value>Enviar Dados</value>
+    <value>&amp;Enviar Dados</value>
   </data>
   <data name="CardFormCancel" xml:space="preserve">
-    <value>Cancelar</value>
+    <value>&amp;Cancelar</value>
   </data>
   <data name="CreditCardWindowTitle" xml:space="preserve">
     <value>E-eu preciso desses dados... Por favor...</value>
