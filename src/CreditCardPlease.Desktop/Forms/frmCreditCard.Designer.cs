@@ -29,9 +29,6 @@
         private void InitializeComponent()
         {
             tlpMain = new TableLayoutPanel();
-            tlpFooter = new TableLayoutPanel();
-            button1 = new Button();
-            button2 = new Button();
             tlpBody = new TableLayoutPanel();
             pbImage = new PictureBox();
             tlpSubmissionForm = new TableLayoutPanel();
@@ -45,20 +42,23 @@
             lblTip = new Label();
             lblTitle = new Label();
             lblThanks = new Label();
+            tlpFooter = new TableLayoutPanel();
+            btnSend = new Button();
+            btnCancel = new Button();
             tlpMain.SuspendLayout();
-            tlpFooter.SuspendLayout();
             tlpBody.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
             tlpSubmissionForm.SuspendLayout();
             tlpFields.SuspendLayout();
+            tlpFooter.SuspendLayout();
             SuspendLayout();
             // 
             // tlpMain
             // 
             tlpMain.ColumnCount = 1;
             tlpMain.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tlpMain.Controls.Add(tlpFooter, 0, 1);
             tlpMain.Controls.Add(tlpBody, 0, 0);
+            tlpMain.Controls.Add(tlpFooter, 0, 1);
             tlpMain.Dock = DockStyle.Fill;
             tlpMain.Location = new Point(0, 0);
             tlpMain.Name = "tlpMain";
@@ -67,41 +67,6 @@
             tlpMain.RowStyles.Add(new RowStyle());
             tlpMain.Size = new Size(800, 450);
             tlpMain.TabIndex = 0;
-            // 
-            // tlpFooter
-            // 
-            tlpFooter.AutoSize = true;
-            tlpFooter.ColumnCount = 3;
-            tlpFooter.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
-            tlpFooter.ColumnStyles.Add(new ColumnStyle());
-            tlpFooter.ColumnStyles.Add(new ColumnStyle());
-            tlpFooter.Controls.Add(button1, 1, 0);
-            tlpFooter.Controls.Add(button2, 2, 0);
-            tlpFooter.Dock = DockStyle.Fill;
-            tlpFooter.Location = new Point(3, 418);
-            tlpFooter.Name = "tlpFooter";
-            tlpFooter.RowCount = 1;
-            tlpFooter.RowStyles.Add(new RowStyle());
-            tlpFooter.Size = new Size(794, 29);
-            tlpFooter.TabIndex = 0;
-            // 
-            // button1
-            // 
-            button1.Location = new Point(635, 3);
-            button1.Name = "button1";
-            button1.Size = new Size(75, 23);
-            button1.TabIndex = 0;
-            button1.Text = "Send data";
-            button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            button2.Location = new Point(716, 3);
-            button2.Name = "button2";
-            button2.Size = new Size(75, 23);
-            button2.TabIndex = 1;
-            button2.Text = "Cancel";
-            button2.UseVisualStyleBackColor = true;
             // 
             // tlpBody
             // 
@@ -116,7 +81,7 @@
             tlpBody.RowCount = 1;
             tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpBody.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
-            tlpBody.Size = new Size(794, 409);
+            tlpBody.Size = new Size(794, 403);
             tlpBody.TabIndex = 1;
             // 
             // pbImage
@@ -125,7 +90,7 @@
             pbImage.Image = Properties.Resources.BannerSayori;
             pbImage.Location = new Point(3, 3);
             pbImage.Name = "pbImage";
-            pbImage.Size = new Size(391, 403);
+            pbImage.Size = new Size(391, 397);
             pbImage.SizeMode = PictureBoxSizeMode.Zoom;
             pbImage.TabIndex = 0;
             pbImage.TabStop = false;
@@ -144,7 +109,7 @@
             tlpSubmissionForm.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpSubmissionForm.RowStyles.Add(new RowStyle(SizeType.Percent, 50F));
             tlpSubmissionForm.RowStyles.Add(new RowStyle());
-            tlpSubmissionForm.Size = new Size(391, 403);
+            tlpSubmissionForm.Size = new Size(391, 397);
             tlpSubmissionForm.TabIndex = 1;
             // 
             // tlpFields
@@ -160,35 +125,35 @@
             tlpFields.Controls.Add(lblCardSecurityCode, 0, 2);
             tlpFields.Controls.Add(lblTip, 0, 3);
             tlpFields.Dock = DockStyle.Fill;
-            tlpFields.Location = new Point(3, 169);
+            tlpFields.Location = new Point(3, 166);
             tlpFields.Name = "tlpFields";
             tlpFields.RowCount = 4;
             tlpFields.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tlpFields.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tlpFields.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
             tlpFields.RowStyles.Add(new RowStyle(SizeType.Percent, 25F));
-            tlpFields.Size = new Size(385, 160);
+            tlpFields.Size = new Size(385, 157);
             tlpFields.TabIndex = 0;
             // 
             // txtCardSecurityCode
             // 
             txtCardSecurityCode.Font = new Font("Segoe UI", 12F);
-            txtCardSecurityCode.Location = new Point(195, 83);
+            txtCardSecurityCode.Location = new Point(195, 81);
             txtCardSecurityCode.MaxLength = 4;
             txtCardSecurityCode.Name = "txtCardSecurityCode";
             txtCardSecurityCode.PlaceholderText = "CVV";
             txtCardSecurityCode.Size = new Size(51, 29);
-            txtCardSecurityCode.TabIndex = 1;
+            txtCardSecurityCode.TabIndex = 2;
             // 
             // txtCardExpirationDate
             // 
             txtCardExpirationDate.Font = new Font("Segoe UI", 12F);
-            txtCardExpirationDate.Location = new Point(195, 43);
+            txtCardExpirationDate.Location = new Point(195, 42);
             txtCardExpirationDate.MaxLength = 5;
             txtCardExpirationDate.Name = "txtCardExpirationDate";
             txtCardExpirationDate.PlaceholderText = "MM/AA";
             txtCardExpirationDate.Size = new Size(100, 29);
-            txtCardExpirationDate.TabIndex = 2;
+            txtCardExpirationDate.TabIndex = 1;
             // 
             // txtCardNumber
             // 
@@ -199,7 +164,7 @@
             txtCardNumber.Name = "txtCardNumber";
             txtCardNumber.PlaceholderText = "1234 5678 9012 3456";
             txtCardNumber.Size = new Size(187, 29);
-            txtCardNumber.TabIndex = 3;
+            txtCardNumber.TabIndex = 0;
             // 
             // lblCardNumber
             // 
@@ -208,7 +173,7 @@
             lblCardNumber.Font = new Font("Segoe UI", 12F);
             lblCardNumber.Location = new Point(3, 0);
             lblCardNumber.Name = "lblCardNumber";
-            lblCardNumber.Size = new Size(186, 40);
+            lblCardNumber.Size = new Size(186, 39);
             lblCardNumber.TabIndex = 4;
             lblCardNumber.Text = "Card Number:";
             // 
@@ -217,9 +182,9 @@
             lblCardExpirationDate.AutoSize = true;
             lblCardExpirationDate.Dock = DockStyle.Fill;
             lblCardExpirationDate.Font = new Font("Segoe UI", 12F);
-            lblCardExpirationDate.Location = new Point(3, 40);
+            lblCardExpirationDate.Location = new Point(3, 39);
             lblCardExpirationDate.Name = "lblCardExpirationDate";
-            lblCardExpirationDate.Size = new Size(186, 40);
+            lblCardExpirationDate.Size = new Size(186, 39);
             lblCardExpirationDate.TabIndex = 5;
             lblCardExpirationDate.Text = "Expiration Date:";
             // 
@@ -228,9 +193,9 @@
             lblCardSecurityCode.AutoSize = true;
             lblCardSecurityCode.Dock = DockStyle.Fill;
             lblCardSecurityCode.Font = new Font("Segoe UI", 12F);
-            lblCardSecurityCode.Location = new Point(3, 80);
+            lblCardSecurityCode.Location = new Point(3, 78);
             lblCardSecurityCode.Name = "lblCardSecurityCode";
-            lblCardSecurityCode.Size = new Size(186, 40);
+            lblCardSecurityCode.Size = new Size(186, 39);
             lblCardSecurityCode.TabIndex = 6;
             lblCardSecurityCode.Text = "Security Code:";
             // 
@@ -240,7 +205,7 @@
             lblTip.Dock = DockStyle.Fill;
             lblTip.Font = new Font("Segoe UI", 10F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblTip.ForeColor = SystemColors.ControlDarkDark;
-            lblTip.Location = new Point(3, 120);
+            lblTip.Location = new Point(3, 117);
             lblTip.Name = "lblTip";
             lblTip.Size = new Size(186, 40);
             lblTip.TabIndex = 7;
@@ -254,7 +219,7 @@
             lblTitle.Location = new Point(3, 0);
             lblTitle.Name = "lblTitle";
             lblTitle.Padding = new Padding(20);
-            lblTitle.Size = new Size(385, 166);
+            lblTitle.Size = new Size(385, 163);
             lblTitle.TabIndex = 1;
             lblTitle.Text = "H-Hello!\r\nC-Could you provide your\r\ncredit card info, pretty please?";
             lblTitle.TextAlign = ContentAlignment.MiddleCenter;
@@ -264,13 +229,52 @@
             lblThanks.AutoSize = true;
             lblThanks.Dock = DockStyle.Fill;
             lblThanks.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
-            lblThanks.Location = new Point(3, 332);
+            lblThanks.Location = new Point(3, 326);
             lblThanks.Name = "lblThanks";
             lblThanks.Padding = new Padding(20);
             lblThanks.Size = new Size(385, 71);
             lblThanks.TabIndex = 2;
             lblThanks.Text = "T-Thanks!";
             lblThanks.TextAlign = ContentAlignment.MiddleCenter;
+            // 
+            // tlpFooter
+            // 
+            tlpFooter.AutoSize = true;
+            tlpFooter.ColumnCount = 3;
+            tlpFooter.ColumnStyles.Add(new ColumnStyle(SizeType.Percent, 100F));
+            tlpFooter.ColumnStyles.Add(new ColumnStyle());
+            tlpFooter.ColumnStyles.Add(new ColumnStyle());
+            tlpFooter.Controls.Add(btnCancel, 2, 0);
+            tlpFooter.Controls.Add(btnSend, 1, 0);
+            tlpFooter.Dock = DockStyle.Fill;
+            tlpFooter.Location = new Point(3, 412);
+            tlpFooter.Name = "tlpFooter";
+            tlpFooter.RowCount = 1;
+            tlpFooter.RowStyles.Add(new RowStyle());
+            tlpFooter.Size = new Size(794, 35);
+            tlpFooter.TabIndex = 2;
+            // 
+            // btnSend
+            // 
+            btnSend.AutoSize = true;
+            btnSend.Font = new Font("Segoe UI", 10F);
+            btnSend.Location = new Point(630, 3);
+            btnSend.Name = "btnSend";
+            btnSend.Size = new Size(80, 29);
+            btnSend.TabIndex = 7;
+            btnSend.Text = "&Send data";
+            btnSend.UseVisualStyleBackColor = true;
+            // 
+            // btnCancel
+            // 
+            btnCancel.AutoSize = true;
+            btnCancel.Font = new Font("Segoe UI", 10F);
+            btnCancel.Location = new Point(716, 3);
+            btnCancel.Name = "btnCancel";
+            btnCancel.Size = new Size(75, 29);
+            btnCancel.TabIndex = 8;
+            btnCancel.Text = "&Cancel";
+            btnCancel.UseVisualStyleBackColor = true;
             // 
             // frmCreditCard
             // 
@@ -284,22 +288,20 @@
             Text = "I-I need that data... Please...";
             tlpMain.ResumeLayout(false);
             tlpMain.PerformLayout();
-            tlpFooter.ResumeLayout(false);
             tlpBody.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)pbImage).EndInit();
             tlpSubmissionForm.ResumeLayout(false);
             tlpSubmissionForm.PerformLayout();
             tlpFields.ResumeLayout(false);
             tlpFields.PerformLayout();
+            tlpFooter.ResumeLayout(false);
+            tlpFooter.PerformLayout();
             ResumeLayout(false);
         }
 
         #endregion
 
         private TableLayoutPanel tlpMain;
-        private TableLayoutPanel tlpFooter;
-        private Button button1;
-        private Button button2;
         private TableLayoutPanel tlpBody;
         private PictureBox pbImage;
         private TableLayoutPanel tlpSubmissionForm;
@@ -313,5 +315,8 @@
         private Label lblTip;
         private Label lblTitle;
         private Label lblThanks;
+        private TableLayoutPanel tlpFooter;
+        private Button btnCancel;
+        private Button btnSend;
     }
 }
