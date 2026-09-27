@@ -8,8 +8,19 @@
     <ImplicitUsings>enable</ImplicitUsings>
 	<ForceDesignerDpiUnaware>true</ForceDesignerDpiUnaware>
 	<PackageIcon>IconSayori3D.png</PackageIcon>
-	<ApplicationIcon>Resources\IconSayoriPlushie.ico</ApplicationIcon>
+	<ApplicationIcon>Resources\IconSayori3D.ico</ApplicationIcon>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<AssemblyTitle>Credit Card Please!</AssemblyTitle>
+	<Title>Credit Card Please!</Title>
+	<Authors>monambike</Authors>
+	<Description>The classic Sayori Credit Card meme has become real!</Description>
+	<Copyright>Copyright © 2026 Vinícius Gabriel</Copyright>
+	<Product>Credit Card Please!</Product>
+	<PackageProjectUrl>https://github.com/monambike/credit-card-please</PackageProjectUrl>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<RepositoryUrl>https://github.com/monambike/credit-card-please</RepositoryUrl>
+	<RepositoryType>git</RepositoryType>
+	<PackageTags>sayori;ddlc;doki-doki-literature-club;meme;credit-card;portuguese;english;</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>
@@ -17,11 +28,15 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Content Include="Resources\IconSayoriPlushie.ico" />
+    <Content Include="Resources\IconSayori3D.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <None Include="..\..\LICENSE">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+    <None Include="..\..\README.md">
       <Pack>True</Pack>
       <PackagePath>\</PackagePath>
     </None>
