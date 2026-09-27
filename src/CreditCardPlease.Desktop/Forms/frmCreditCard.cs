@@ -1,3 +1,4 @@
+using CreditCardPlease.Desktop.Constants;
 using CreditCardPlease.Desktop.Resources.Localization;
 
 namespace CreditCardPlease.Desktop
@@ -8,6 +9,7 @@ namespace CreditCardPlease.Desktop
         {
             InitializeComponent();
             SetLocalization();
+            UpdateLanguageMenu();
         }
 
         private void btnSend_Click(object sender, EventArgs e)
@@ -66,7 +68,7 @@ namespace CreditCardPlease.Desktop
             this.Text = Strings.CreditCardWindowTitle;
 
             lblTitle.Text = Strings.CardFormTitle;
-            lblThanks.Text= Strings.CardFormThanks;
+            lblThanks.Text = Strings.CardFormThanks;
 
             lblCardNumber.Text = Strings.CardFormCardNumber;
             lblCardExpirationDate.Text = Strings.CardFormExpirationDate;
@@ -75,6 +77,31 @@ namespace CreditCardPlease.Desktop
 
             btnCancel.Text = Strings.CardFormCancel;
             btnSend.Text = Strings.CardFormSendData;
+        }
+
+        private void miLanguageSystemDefault_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.System);
+
+        private void miLanguageEnglish_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.English);
+
+        private void miLanguagePortuguese_Click(object sender, EventArgs e)
+            => SetApplicationLanguage(Languages.Portuguese);
+
+        private static void SetApplicationLanguage(string language)
+        {
+            Properties.Settings.Default.Language = language;
+            Properties.Settings.Default.Save();
+            Application.Restart();
+        }
+
+        private void UpdateLanguageMenu()
+        {
+            string language = Properties.Settings.Default.Language;
+
+            miLanguageSystemDefault.Checked = language == Languages.System;
+            miLanguageEnglish.Checked = language == Languages.English;
+            miLanguagePortuguese.Checked = language == Languages.Portuguese;
         }
     }
 }

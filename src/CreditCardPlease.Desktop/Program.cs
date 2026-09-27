@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace CreditCardPlease.Desktop
 {
     internal static class Program
@@ -11,6 +13,15 @@ namespace CreditCardPlease.Desktop
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
+
+            string language = Properties.Settings.Default.Language;
+
+            if (language != "System")
+            {
+                Thread.CurrentThread.CurrentUICulture =
+                    new CultureInfo(language);
+            }
+
             Application.Run(new frmCreditCard());
         }
     }

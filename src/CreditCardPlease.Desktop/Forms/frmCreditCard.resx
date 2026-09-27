@@ -117,4 +117,769 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tlpMain.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="msMain.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="miUwu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 22</value>
+  </data>
+  <data name="miUwu.Text" xml:space="preserve">
+    <value>uwu</value>
+  </data>
+  <data name="miSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 6</value>
+  </data>
+  <data name="miExit.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 22</value>
+  </data>
+  <data name="miExit.Text" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="miApplication.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 20</value>
+  </data>
+  <data name="miApplication.Text" xml:space="preserve">
+    <value>Application</value>
+  </data>
+  <data name="miLanguageSystemDefault.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="miLanguageSystemDefault.Text" xml:space="preserve">
+    <value>(System Default)</value>
+  </data>
+  <data name="miLanguageEnglish.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="miLanguageEnglish.Text" xml:space="preserve">
+    <value>(en-us) English</value>
+  </data>
+  <data name="miLanguagePortuguese.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 22</value>
+  </data>
+  <data name="miLanguagePortuguese.Text" xml:space="preserve">
+    <value>(pt-br) Português</value>
+  </data>
+  <data name="miLanguage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 22</value>
+  </data>
+  <data name="miLanguage.Text" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="miSettings.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 20</value>
+  </data>
+  <data name="miSettings.Text" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="miAbout.Size" type="System.Drawing.Size, System.Drawing">
+    <value>52, 20</value>
+  </data>
+  <data name="miAbout.Text" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="msMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="msMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 24</value>
+  </data>
+  <data name="msMain.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="msMain.Text" xml:space="preserve">
+    <value>menuStrip1</value>
+  </data>
+  <data name="&gt;&gt;msMain.Name" xml:space="preserve">
+    <value>msMain</value>
+  </data>
+  <data name="&gt;&gt;msMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.MenuStrip, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;msMain.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;msMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpBody.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pbImage.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pbImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="pbImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 372</value>
+  </data>
+  <data name="pbImage.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>Zoom</value>
+  </data>
+  <data name="pbImage.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pbImage.Name" xml:space="preserve">
+    <value>pbImage</value>
+  </data>
+  <data name="&gt;&gt;pbImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pbImage.Parent" xml:space="preserve">
+    <value>tlpBody</value>
+  </data>
+  <data name="&gt;&gt;pbImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpSubmissionForm.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpFields.ColumnCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="txtCardSecurityCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="txtCardSecurityCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 75</value>
+  </data>
+  <data name="txtCardSecurityCode.MaxLength" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="txtCardSecurityCode.PlaceholderText" xml:space="preserve">
+    <value>CVV</value>
+  </data>
+  <data name="txtCardSecurityCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 29</value>
+  </data>
+  <data name="txtCardSecurityCode.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;txtCardSecurityCode.Name" xml:space="preserve">
+    <value>txtCardSecurityCode</value>
+  </data>
+  <data name="&gt;&gt;txtCardSecurityCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCardSecurityCode.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;txtCardSecurityCode.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="txtCardExpirationDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="txtCardExpirationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 39</value>
+  </data>
+  <data name="txtCardExpirationDate.MaxLength" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="txtCardExpirationDate.PlaceholderText" xml:space="preserve">
+    <value>MM/AA</value>
+  </data>
+  <data name="txtCardExpirationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 29</value>
+  </data>
+  <data name="txtCardExpirationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;txtCardExpirationDate.Name" xml:space="preserve">
+    <value>txtCardExpirationDate</value>
+  </data>
+  <data name="&gt;&gt;txtCardExpirationDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCardExpirationDate.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;txtCardExpirationDate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="txtCardNumber.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="txtCardNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="txtCardNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>127, 3</value>
+  </data>
+  <data name="txtCardNumber.MaxLength" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="txtCardNumber.PlaceholderText" xml:space="preserve">
+    <value>1234 5678 9012 3456</value>
+  </data>
+  <data name="txtCardNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>255, 29</value>
+  </data>
+  <data name="txtCardNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtCardNumber.Name" xml:space="preserve">
+    <value>txtCardNumber</value>
+  </data>
+  <data name="&gt;&gt;txtCardNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtCardNumber.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;txtCardNumber.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCardNumber.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCardNumber.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblCardNumber.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="lblCardNumber.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <data name="lblCardNumber.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 36</value>
+  </data>
+  <data name="lblCardNumber.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="lblCardNumber.Text" xml:space="preserve">
+    <value>Card Number:</value>
+  </data>
+  <data name="lblCardNumber.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblCardNumber.Name" xml:space="preserve">
+    <value>lblCardNumber</value>
+  </data>
+  <data name="&gt;&gt;lblCardNumber.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCardNumber.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;lblCardNumber.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="lblCardExpirationDate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCardExpirationDate.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblCardExpirationDate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="lblCardExpirationDate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 36</value>
+  </data>
+  <data name="lblCardExpirationDate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 36</value>
+  </data>
+  <data name="lblCardExpirationDate.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="lblCardExpirationDate.Text" xml:space="preserve">
+    <value>Expiration Date:</value>
+  </data>
+  <data name="lblCardExpirationDate.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblCardExpirationDate.Name" xml:space="preserve">
+    <value>lblCardExpirationDate</value>
+  </data>
+  <data name="&gt;&gt;lblCardExpirationDate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCardExpirationDate.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;lblCardExpirationDate.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCardSecurityCode.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCardSecurityCode.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblCardSecurityCode.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="lblCardSecurityCode.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 72</value>
+  </data>
+  <data name="lblCardSecurityCode.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 36</value>
+  </data>
+  <data name="lblCardSecurityCode.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="lblCardSecurityCode.Text" xml:space="preserve">
+    <value>Security Code:</value>
+  </data>
+  <data name="lblCardSecurityCode.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopRight</value>
+  </data>
+  <data name="&gt;&gt;lblCardSecurityCode.Name" xml:space="preserve">
+    <value>lblCardSecurityCode</value>
+  </data>
+  <data name="&gt;&gt;lblCardSecurityCode.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCardSecurityCode.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;lblCardSecurityCode.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblRequiredFields.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblRequiredFields.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblRequiredFields.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 11pt, style=Italic</value>
+  </data>
+  <data name="lblRequiredFields.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 108</value>
+  </data>
+  <data name="lblRequiredFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 37</value>
+  </data>
+  <data name="lblRequiredFields.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="lblRequiredFields.Text" xml:space="preserve">
+    <value>* Required Fields</value>
+  </data>
+  <data name="lblRequiredFields.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleRight</value>
+  </data>
+  <data name="&gt;&gt;lblRequiredFields.Name" xml:space="preserve">
+    <value>lblRequiredFields</value>
+  </data>
+  <data name="&gt;&gt;lblRequiredFields.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblRequiredFields.Parent" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;lblRequiredFields.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="tlpFields.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpFields.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 154</value>
+  </data>
+  <data name="tlpFields.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tlpFields.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 145</value>
+  </data>
+  <data name="tlpFields.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpFields.Name" xml:space="preserve">
+    <value>tlpFields</value>
+  </data>
+  <data name="&gt;&gt;tlpFields.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpFields.Parent" xml:space="preserve">
+    <value>tlpSubmissionForm</value>
+  </data>
+  <data name="&gt;&gt;tlpFields.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpFields.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="txtCardSecurityCode" Row="2" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCardExpirationDate" Row="1" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="txtCardNumber" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;Control Name="lblCardNumber" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCardExpirationDate" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblCardSecurityCode" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblRequiredFields" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="AutoSize,0,Percent,100" /&gt;&lt;Rows Styles="Percent,25,Percent,25,Percent,25,Percent,25" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="lblTitle.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblTitle.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblTitle.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt, style=Bold</value>
+  </data>
+  <data name="lblTitle.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTitle.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 20, 20, 20</value>
+  </data>
+  <data name="lblTitle.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 151</value>
+  </data>
+  <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblTitle.Text" xml:space="preserve">
+    <value>H-Hello!
+C-Could you provide your
+credit card info, pretty please?</value>
+  </data>
+  <data name="lblTitle.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Name" xml:space="preserve">
+    <value>lblTitle</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.Parent" xml:space="preserve">
+    <value>tlpSubmissionForm</value>
+  </data>
+  <data name="&gt;&gt;lblTitle.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblThanks.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblThanks.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblThanks.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 16pt, style=Bold</value>
+  </data>
+  <data name="lblThanks.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 302</value>
+  </data>
+  <data name="lblThanks.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>20, 20, 20, 20</value>
+  </data>
+  <data name="lblThanks.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 70</value>
+  </data>
+  <data name="lblThanks.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="lblThanks.Text" xml:space="preserve">
+    <value>T-Thanks!</value>
+  </data>
+  <data name="lblThanks.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;lblThanks.Name" xml:space="preserve">
+    <value>lblThanks</value>
+  </data>
+  <data name="&gt;&gt;lblThanks.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblThanks.Parent" xml:space="preserve">
+    <value>tlpSubmissionForm</value>
+  </data>
+  <data name="&gt;&gt;lblThanks.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlpSubmissionForm.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpSubmissionForm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>400, 3</value>
+  </data>
+  <data name="tlpSubmissionForm.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="tlpSubmissionForm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>391, 372</value>
+  </data>
+  <data name="tlpSubmissionForm.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tlpSubmissionForm.Name" xml:space="preserve">
+    <value>tlpSubmissionForm</value>
+  </data>
+  <data name="&gt;&gt;tlpSubmissionForm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpSubmissionForm.Parent" xml:space="preserve">
+    <value>tlpBody</value>
+  </data>
+  <data name="&gt;&gt;tlpSubmissionForm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpSubmissionForm.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="tlpFields" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblTitle" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblThanks" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Percent,50,Percent,50,AutoSize,0,Absolute,20" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tlpBody.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpBody.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 27</value>
+  </data>
+  <data name="tlpBody.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpBody.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 378</value>
+  </data>
+  <data name="tlpBody.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tlpBody.Name" xml:space="preserve">
+    <value>tlpBody</value>
+  </data>
+  <data name="&gt;&gt;tlpBody.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpBody.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpBody.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpBody.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pbImage" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpSubmissionForm" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="lblSeparator.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="lblSeparator.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 408</value>
+  </data>
+  <data name="lblSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 1</value>
+  </data>
+  <data name="lblSeparator.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Name" xml:space="preserve">
+    <value>lblSeparator</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;lblSeparator.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="tlpFooter.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpFooter.ColumnCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btnCancel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCancel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnCancel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>716, 3</value>
+  </data>
+  <data name="btnCancel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 29</value>
+  </data>
+  <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btnCancel.Text" xml:space="preserve">
+    <value>&amp;Cancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Name" xml:space="preserve">
+    <value>btnCancel</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.Parent" xml:space="preserve">
+    <value>tlpFooter</value>
+  </data>
+  <data name="&gt;&gt;btnCancel.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="btnSend.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnSend.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
+  <data name="btnSend.Location" type="System.Drawing.Point, System.Drawing">
+    <value>628, 3</value>
+  </data>
+  <data name="btnSend.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 29</value>
+  </data>
+  <data name="btnSend.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btnSend.Text" xml:space="preserve">
+    <value>&amp;Send Data</value>
+  </data>
+  <data name="&gt;&gt;btnSend.Name" xml:space="preserve">
+    <value>btnSend</value>
+  </data>
+  <data name="&gt;&gt;btnSend.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnSend.Parent" xml:space="preserve">
+    <value>tlpFooter</value>
+  </data>
+  <data name="&gt;&gt;btnSend.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpFooter.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpFooter.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 412</value>
+  </data>
+  <data name="tlpFooter.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpFooter.Size" type="System.Drawing.Size, System.Drawing">
+    <value>794, 35</value>
+  </data>
+  <data name="tlpFooter.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tlpFooter.Name" xml:space="preserve">
+    <value>tlpFooter</value>
+  </data>
+  <data name="&gt;&gt;tlpFooter.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpFooter.Parent" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpFooter.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tlpFooter.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="btnCancel" Row="0" RowSpan="1" Column="2" ColumnSpan="1" /&gt;&lt;Control Name="btnSend" Row="0" RowSpan="1" Column="1" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100,AutoSize,0,AutoSize,0" /&gt;&lt;Rows Styles="AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="tlpMain.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpMain.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="tlpMain.RowCount" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="tlpMain.Size" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="tlpMain.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Name" xml:space="preserve">
+    <value>tlpMain</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlpMain.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpMain.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="msMain" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpBody" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="lblSeparator" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="tlpFooter" Row="3" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="AutoSize,0,Percent,100,Absolute,1,AutoSize,0" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>7, 15</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>800, 450</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>I-I need that data... Please...</value>
+  </data>
+  <data name="&gt;&gt;miApplication.Name" xml:space="preserve">
+    <value>miApplication</value>
+  </data>
+  <data name="&gt;&gt;miApplication.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miUwu.Name" xml:space="preserve">
+    <value>miUwu</value>
+  </data>
+  <data name="&gt;&gt;miUwu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miSeparator.Name" xml:space="preserve">
+    <value>miSeparator</value>
+  </data>
+  <data name="&gt;&gt;miSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miExit.Name" xml:space="preserve">
+    <value>miExit</value>
+  </data>
+  <data name="&gt;&gt;miExit.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miSettings.Name" xml:space="preserve">
+    <value>miSettings</value>
+  </data>
+  <data name="&gt;&gt;miSettings.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miLanguage.Name" xml:space="preserve">
+    <value>miLanguage</value>
+  </data>
+  <data name="&gt;&gt;miLanguage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miLanguageSystemDefault.Name" xml:space="preserve">
+    <value>miLanguageSystemDefault</value>
+  </data>
+  <data name="&gt;&gt;miLanguageSystemDefault.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miLanguageEnglish.Name" xml:space="preserve">
+    <value>miLanguageEnglish</value>
+  </data>
+  <data name="&gt;&gt;miLanguageEnglish.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miLanguagePortuguese.Name" xml:space="preserve">
+    <value>miLanguagePortuguese</value>
+  </data>
+  <data name="&gt;&gt;miLanguagePortuguese.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;miAbout.Name" xml:space="preserve">
+    <value>miAbout</value>
+  </data>
+  <data name="&gt;&gt;miAbout.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripMenuItem, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>frmCreditCard</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
