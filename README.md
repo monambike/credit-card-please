@@ -13,6 +13,14 @@ The classic Sayori Credit Card meme has become real!
 
 <img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/8c88dbd1-68af-4b55-a5e0-390d0849f3a8" />
 
+# Download
+
+Link: https://github.com/monambike/credit-card-please/releases/download/v1.0.0/win-x64.zip
+
+_**Note:** If the message "Windows protected you PC" by "Microsoft Defender Smartscreen" shows up, click "More Info" and then "Run Anyway".
+This happens because the app is outside Microsoft Store._
+
+
 # Contact
 
 You can find me on likedin by here [linkedin.com/in/monambike/](https://www.linkedin.com/in/monambike/). If you want to see videos about my work you can check my YouTube channel [youtube.com/@monambike_portfolio](https://www.youtube.com/@monambike_portfolio) and if you want to see my artworks you can check at my instagram [instagram.com/monambike_portfolio](https://www.instagram.com/monambike_portfolio).
