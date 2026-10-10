@@ -10,12 +10,12 @@ namespace CreditCardPlease.Desktop
     /// <summary>
     /// Form Credit Card.
     /// </summary>
-    public partial class frmCreditCard : Form
+    public partial class FormCreditCard : Form
     {
         /// <summary>
         /// Constructor for the frmCreditCard class.
         /// </summary>
-        public frmCreditCard()
+        public FormCreditCard()
         {
             InitializeComponent();
             UpdateFormLocalization();

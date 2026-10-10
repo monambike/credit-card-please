@@ -1,6 +1,6 @@
 ﻿namespace CreditCardPlease.Desktop
 {
-    partial class frmCreditCard
+    partial class FormCreditCard
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCreditCard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormCreditCard));
             tlpMain = new TableLayoutPanel();
             msMain = new MenuStrip();
             miApplication = new ToolStripMenuItem();
@@ -255,7 +255,7 @@
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
             // 
-            // frmCreditCard
+            // FormCreditCard
             // 
             AcceptButton = btnSend;
             resources.ApplyResources(this, "$this");
@@ -265,7 +265,7 @@
             MainMenuStrip = msMain;
             MaximizeBox = false;
             MinimizeBox = false;
-            Name = "frmCreditCard";
+            Name = "FormCreditCard";
             tlpMain.ResumeLayout(false);
             tlpMain.PerformLayout();
             msMain.ResumeLayout(false);

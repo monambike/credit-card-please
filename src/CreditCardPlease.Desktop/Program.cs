@@ -24,7 +24,7 @@ namespace CreditCardPlease.Desktop
                 Thread.CurrentThread.CurrentUICulture = new CultureInfo(language);
 
             // Start the main form of the application.
-            Application.Run(new frmCreditCard());
+            Application.Run(new FormCreditCard());
         }
     }
 }
