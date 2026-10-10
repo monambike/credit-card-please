@@ -58,6 +58,7 @@
             tlpFooter = new TableLayoutPanel();
             btnCancel = new Button();
             btnSend = new Button();
+            miDisclaimer = new ToolStripMenuItem();
             tlpMain.SuspendLayout();
             msMain.SuspendLayout();
             tlpBody.SuspendLayout();
@@ -78,7 +79,7 @@
             // 
             // msMain
             // 
-            msMain.Items.AddRange(new ToolStripItem[] { miApplication, miSettings, miAbout });
+            msMain.Items.AddRange(new ToolStripItem[] { miApplication, miSettings, miAbout, miDisclaimer });
             resources.ApplyResources(msMain, "msMain");
             msMain.Name = "msMain";
             // 
@@ -248,6 +249,12 @@
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
             // 
+            // miDisclaimer
+            // 
+            miDisclaimer.Name = "miDisclaimer";
+            resources.ApplyResources(miDisclaimer, "miDisclaimer");
+            miDisclaimer.Click += miDisclaimer_Click;
+            // 
             // frmCreditCard
             // 
             AcceptButton = btnSend;
@@ -305,5 +312,6 @@
         private ToolStripMenuItem miLanguageEnglish;
         private ToolStripMenuItem miLanguagePortuguese;
         private ToolStripMenuItem miAbout;
+        private ToolStripMenuItem miDisclaimer;
     }
 }

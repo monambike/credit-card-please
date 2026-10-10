@@ -74,6 +74,8 @@ namespace CreditCardPlease.Desktop
 
         private void SendCreditCardData()
         {
+            ClearCreditCardFields();
+
             MessageBox.Show(
                 Strings.DialogSendDescription,
                 Strings.DialogSendTitle, MessageBoxButtons.OK);
@@ -130,5 +132,27 @@ namespace CreditCardPlease.Desktop
                 "About The App :DD",
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Information);
+
+        private void miDisclaimer_Click(object sender, EventArgs e)
+        {
+            var message =
+            """
+            The obvious must be stated, don't send your credit card information to anyone.
+
+            This application is just for fun and doesn't collect your credit card data. Yet so, we don't endorse putting real credit card data here and we don't have safeguards to protect your credit card information.
+
+            ---
+
+            You can use websites like https://www.getcreditcardnumbers.com/ to generate fake credit card numbers for playing around a bit.
+
+            Have fun :D
+            """;
+
+            MessageBox.Show(
+                message,
+                "Disclaimer",
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Warning);
+        }
     }
 }
