@@ -41,6 +41,7 @@
             miLanguageEnglish = new ToolStripMenuItem();
             miLanguagePortuguese = new ToolStripMenuItem();
             miAbout = new ToolStripMenuItem();
+            miDisclaimer = new ToolStripMenuItem();
             tlpBody = new TableLayoutPanel();
             pbImage = new PictureBox();
             tlpSubmissionForm = new TableLayoutPanel();
@@ -58,7 +59,6 @@
             tlpFooter = new TableLayoutPanel();
             btnCancel = new Button();
             btnSend = new Button();
-            miDisclaimer = new ToolStripMenuItem();
             tlpMain.SuspendLayout();
             msMain.SuspendLayout();
             tlpBody.SuspendLayout();
@@ -141,6 +141,12 @@
             miAbout.Name = "miAbout";
             resources.ApplyResources(miAbout, "miAbout");
             miAbout.Click += miAbout_Click;
+            // 
+            // miDisclaimer
+            // 
+            miDisclaimer.Name = "miDisclaimer";
+            resources.ApplyResources(miDisclaimer, "miDisclaimer");
+            miDisclaimer.Click += miDisclaimer_Click;
             // 
             // tlpBody
             // 
@@ -248,12 +254,6 @@
             btnSend.Name = "btnSend";
             btnSend.UseVisualStyleBackColor = true;
             btnSend.Click += btnSend_Click;
-            // 
-            // miDisclaimer
-            // 
-            miDisclaimer.Name = "miDisclaimer";
-            resources.ApplyResources(miDisclaimer, "miDisclaimer");
-            miDisclaimer.Click += miDisclaimer_Click;
             // 
             // frmCreditCard
             // 

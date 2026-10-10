@@ -192,4 +192,27 @@ credit card info, pretty please?</value>
   <data name="MenuApplication" xml:space="preserve">
     <value>Application</value>
   </data>
+  <data name="DialogDisclaimerDescription" xml:space="preserve">
+    <value>The obvious must be stated, don't send your credit card information to anyone.
+
+This application is just for fun and doesn't collect your credit card data. Yet so, we don't endorse putting real credit card data here, we don't have safeguards.
+
+You can use websites like "https://www.getcreditcardnumbers.com/" to generate fake credit card numbers for playing around a bit.
+
+Have fun and stay safe :D</value>
+  </data>
+  <data name="MenuDisclaimer" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="DialogDisclaimerTitle" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="DialogAboutTitle" xml:space="preserve">
+    <value>About The App :DD</value>
+  </data>
+  <data name="DialogAboutDescription" xml:space="preserve">
+    <value>Author: @monambike
+
+GitHub Repository: https://github.com/monambike/credit-card-please</value>
+  </data>
 </root>

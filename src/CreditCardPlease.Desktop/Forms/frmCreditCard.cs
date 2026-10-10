@@ -7,80 +7,106 @@ using CreditCardPlease.Desktop.Resources.Localization;
 
 namespace CreditCardPlease.Desktop
 {
+    /// <summary>
+    /// Form Credit Card.
+    /// </summary>
     public partial class frmCreditCard : Form
     {
+        /// <summary>
+        /// Constructor for the frmCreditCard class.
+        /// </summary>
         public frmCreditCard()
         {
             InitializeComponent();
-            SetControlsLocalization();
-            UpdateLanguageMenu();
+            UpdateFormLocalization();
         }
 
-        private void btnSend_Click(object sender, EventArgs e)
-        {
-            SendCreditCardData();
-        }
 
-        private void btnCancel_Click(object sender, EventArgs e)
-        {
-            CancelCreditCardSubmission();
-        }
+        /// <summary>
+        /// Event handler for the Send button click event. Sends credit card data.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnSend_Click(object sender, EventArgs e) => SendCreditCardData();
 
+        /// <summary>
+        /// Event handler for the Cancel button click event. Cancels credit card submission.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void btnCancel_Click(object sender, EventArgs e) => CancelCreditCardSubmission();
+
+
+        /// <summary>
+        /// Event handler for the "uwu" menu item click event. UwU
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void miUwu_Click(object sender, EventArgs e)
             => MessageBox.Show("uwu", "owo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+        /// <summary>
+        /// Event handler for the Exit menu item click event. Exits the application.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void miExit_Click(object sender, EventArgs e)
             => Application.Exit();
 
-        private void SetControlsLocalization()
-        {
-            this.Text = Strings.CreditCardWindowTitle;
-
-            lblTitle.Text = Strings.CardFormTitle;
-            lblThanks.Text = Strings.CardFormThanks;
-
-            lblCardNumber.Text = $"{Strings.CardFormCardNumber}:";
-            lblCardExpirationDate.Text = $"{Strings.CardFormExpirationDate}:";
-            lblCardSecurityCode.Text = $"{Strings.CardFormSecurityCode}:";
-            lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
-
-            btnCancel.Text = Strings.CardFormCancel;
-            btnSend.Text = Strings.CardFormSendData;
-
-            miApplication.Text = Strings.MenuApplication;
-            miExit.Text = Strings.MenuExit;
-            miSettings.Text = Strings.MenuSettings;
-            miLanguage.Text = Strings.MenuLanguage;
-            miLanguageSystemDefault.Text = $"({Strings.MenuSystemDefault})";
-            miAbout.Text = Strings.MenuAbout;
-        }
-
+        /// <summary>
+        /// Event handler for the System Default language menu item click event. Sets the application language to system default.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void miLanguageSystemDefault_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.System);
+            => SetApplicationLanguageAndRestart(Languages.System);
 
+        /// <summary>
+        /// Event handler for the System Default language menu item click event. Sets the application language to english.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void miLanguageEnglish_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.English);
+            => SetApplicationLanguageAndRestart(Languages.English);
 
+        /// <summary>
+        /// Event handler for the System Default language menu item click event. Sets the application language to portuguese.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void miLanguagePortuguese_Click(object sender, EventArgs e)
-            => SetApplicationLanguage(Languages.Portuguese);
+            => SetApplicationLanguageAndRestart(Languages.Portuguese);
 
-        private static void SetApplicationLanguage(string language)
-        {
-            Properties.Settings.Default.Language = language;
-            Properties.Settings.Default.Save();
-            Application.Restart();
-        }
+        /// <summary>
+        /// Event handler for the About menu item click event. Displays information about the application and its author.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void miAbout_Click(object sender, EventArgs e)
+            => MessageBox.Show(Strings.DialogAboutDescription, Strings.DialogAboutTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+        /// <summary>
+        /// Event handler for the Disclaimer menu item click event. Displays a disclaimer message about credit card data usage.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void miDisclaimer_Click(object sender, EventArgs e)
+        => MessageBox.Show(Strings.DialogDisclaimerDescription, Strings.DialogDisclaimerTitle, MessageBoxButtons.OK, MessageBoxIcon.Warning);
 
 
+        /// <summary>
+        /// Sends the credit card data and clears the input fields.
+        /// </summary>
         private void SendCreditCardData()
         {
             ClearCreditCardFields();
 
-            MessageBox.Show(
-                Strings.DialogSendDescription,
-                Strings.DialogSendTitle, MessageBoxButtons.OK);
+            MessageBox.Show(Strings.DialogSendDescription, Strings.DialogSendTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
+        /// <summary>
+        /// Cancels the credit card submission and clears the input fields.
+        /// </summary>
         private void CancelCreditCardSubmission()
         {
             DialogResult result = MessageBox.Show(
@@ -108,6 +134,9 @@ namespace CreditCardPlease.Desktop
             }
         }
 
+        /// <summary>
+        /// Clears the credit card input fields in the form.
+        /// </summary>
         private void ClearCreditCardFields()
         {
             txtCardNumber.Clear();
@@ -115,7 +144,31 @@ namespace CreditCardPlease.Desktop
             txtCardSecurityCode.Clear();
         }
 
-        private void UpdateLanguageMenu()
+
+        /// <summary>
+        /// Sets the application language and restarts the application to apply the changes.
+        /// </summary>
+        /// <param name="language"></param>
+        private static void SetApplicationLanguageAndRestart(string language)
+        {
+            Properties.Settings.Default.Language = language;
+            Properties.Settings.Default.Save();
+            Application.Restart();
+        }
+
+        /// <summary>
+        /// Updates the form's localization based on the current language settings.
+        /// </summary>
+        private void UpdateFormLocalization()
+        {
+            UpdateControlsLocalizationText();
+            UpdateLanguageMenuSelection();
+        }
+
+        /// <summary>
+        /// Updates the language menu items to reflect the current language selection.
+        /// </summary>
+        private void UpdateLanguageMenuSelection()
         {
             string language = Properties.Settings.Default.Language;
 
@@ -124,35 +177,33 @@ namespace CreditCardPlease.Desktop
             miLanguagePortuguese.Checked = language == Languages.Portuguese;
         }
 
-        private void miAbout_Click(object sender, EventArgs e)
-            => MessageBox.Show(
-                "Author: @monambike" +
-                "\n" +
-                "\nGitHub Repository: https://github.com/monambike/credit-card-please",
-                "About The App :DD",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Information);
-
-        private void miDisclaimer_Click(object sender, EventArgs e)
+        /// <summary>
+        /// Sets the localization for the controls in the form based on the current language settings.
+        /// </summary>
+        private void UpdateControlsLocalizationText()
         {
-            var message =
-            """
-            The obvious must be stated, don't send your credit card information to anyone.
+            // Window Title
+            this.Text = Strings.CreditCardWindowTitle;
 
-            This application is just for fun and doesn't collect your credit card data. Yet so, we don't endorse putting real credit card data here and we don't have safeguards to protect your credit card information.
+            // Title Labels
+            lblTitle.Text = Strings.CardFormTitle;
+            lblThanks.Text = Strings.CardFormThanks;
+            // Credit Card Labels
+            lblCardNumber.Text = $"{Strings.CardFormCardNumber}:";
+            lblCardExpirationDate.Text = $"{Strings.CardFormExpirationDate}:";
+            lblCardSecurityCode.Text = $"{Strings.CardFormSecurityCode}:";
+            lblRequiredFields.Text = $"* {Strings.CardFormRequiredFields}";
+            // Buttons Texts
+            btnCancel.Text = Strings.CardFormCancel;
+            btnSend.Text = Strings.CardFormSendData;
 
-            ---
-
-            You can use websites like https://www.getcreditcardnumbers.com/ to generate fake credit card numbers for playing around a bit.
-
-            Have fun :D
-            """;
-
-            MessageBox.Show(
-                message,
-                "Disclaimer",
-                MessageBoxButtons.OK,
-                MessageBoxIcon.Warning);
+            // Menu Items Texts
+            miApplication.Text = Strings.MenuApplication;
+            miExit.Text = Strings.MenuExit;
+            miSettings.Text = Strings.MenuSettings;
+            miLanguage.Text = Strings.MenuLanguage;
+            miLanguageSystemDefault.Text = $"({Strings.MenuSystemDefault})";
+            miAbout.Text = Strings.MenuAbout;
         }
     }
 }

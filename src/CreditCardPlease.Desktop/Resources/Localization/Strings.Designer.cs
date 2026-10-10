@@ -144,6 +144,26 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Author: @monambike
+        ///
+        ///GitHub Repository: https://github.com/monambike/credit-card-please.
+        /// </summary>
+        internal static string DialogAboutDescription {
+            get {
+                return ResourceManager.GetString("DialogAboutDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to About The App :DD.
+        /// </summary>
+        internal static string DialogAboutTitle {
+            get {
+                return ResourceManager.GetString("DialogAboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Y-You really want to clear the card data?!
         ///
         ///P-please don&apos;t do anything stupid!.
@@ -200,6 +220,30 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to The obvious must be stated, don&apos;t send your credit card information to anyone.
+        ///
+        ///This application is just for fun and doesn&apos;t collect your credit card data. Yet so, we don&apos;t endorse putting real credit card data here, we don&apos;t have safeguards.
+        ///
+        ///You can use websites like &quot;https://www.getcreditcardnumbers.com/&quot; to generate fake credit card numbers for playing around a bit.
+        ///
+        ///Have fun and stay safe :D.
+        /// </summary>
+        internal static string DialogDisclaimerDescription {
+            get {
+                return ResourceManager.GetString("DialogDisclaimerDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disclaimer.
+        /// </summary>
+        internal static string DialogDisclaimerTitle {
+            get {
+                return ResourceManager.GetString("DialogDisclaimerTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to T-Thank you so much! &gt;\\\\~\\\\&lt;
         ///
         ///Your credit card data is in good hands! ❤️.
@@ -234,6 +278,15 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         internal static string MenuApplication {
             get {
                 return ResourceManager.GetString("MenuApplication", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Disclaimer.
+        /// </summary>
+        internal static string MenuDisclaimer {
+            get {
+                return ResourceManager.GetString("MenuDisclaimer", resourceCulture);
             }
         }
         

@@ -192,4 +192,27 @@ dados do cartão de crédito, porfavorzinho?</value>
   <data name="MenuApplication" xml:space="preserve">
     <value>Aplicativo</value>
   </data>
+  <data name="DialogDisclaimerDescription" xml:space="preserve">
+    <value>O óbvio precisa ser dito, não envie dados do seu cartão de crédito pra ninguém.
+
+Esse aplicativo é só pra diversão e não coleta seus dados de cartão de crédito. Ainda assim, nós não incentivamos a colocar dados reais de cartões de crédito aqui, não criamos sistemas de segurança.
+
+Você pode pode usar sites como "https://www.getcreditcardnumbers.com/" para gerar dados falsos de cartão de crédito para brincar um pouco.
+
+Se divirta e se mantenha seguro :D</value>
+  </data>
+  <data name="MenuDisclaimer" xml:space="preserve">
+    <value>Disclaimer</value>
+  </data>
+  <data name="DialogDisclaimerTitle" xml:space="preserve">
+    <value>Aviso</value>
+  </data>
+  <data name="DialogAboutTitle" xml:space="preserve">
+    <value>Sobre o App :DD</value>
+  </data>
+  <data name="DialogAboutDescription" xml:space="preserve">
+    <value>Autor: @monambike
+
+Repositório do GitHub: https://github.com/monambike/credit-card-please</value>
+  </data>
 </root>
