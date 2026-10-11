@@ -11,10 +11,10 @@
         /// <returns>The random credit card number.</returns>
         public static string GetRandomNumber()
         {
-            string numberWithoutCheckDigit = "9";
+            string numberWithoutCheckDigit = "";
 
             // Generate 14 random digits between 0 and 9 each and append to the string.
-            for (int i = 0; i < 14; i++)
+            for (int i = 0; i < 15; i++)
                 numberWithoutCheckDigit += Random.Shared.Next(0, 10);
 
             int checkDigit = CalculateCheckDigit(numberWithoutCheckDigit);
