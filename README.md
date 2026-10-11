@@ -5,7 +5,7 @@
 ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white)
 ![.Net](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
 
-The classic Sayori Credit Card meme has become real! >\\~\\< You can now fully send your credit card information to Sayori!
+The classic Sayori Credit Card meme has become real! >\\\\~\\\\< You can now fully send your credit card information to Sayori!
 
 <img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/8a0698de-da5a-4790-afb0-211e4a3feec0" />
 
