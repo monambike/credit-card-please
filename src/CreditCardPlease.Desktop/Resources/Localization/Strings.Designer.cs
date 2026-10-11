@@ -264,6 +264,24 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Here&apos;s your fake credit card information. But don&apos;t tell Sayori ;P wink wink!.
+        /// </summary>
+        internal static string DialogueMonikaDescription {
+            get {
+                return ResourceManager.GetString("DialogueMonikaDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [GLITCH] Monika.exe is contacting you....
+        /// </summary>
+        internal static string DialogueMonikaTitle {
+            get {
+                return ResourceManager.GetString("DialogueMonikaTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to About.
         /// </summary>
         internal static string MenuAbout {

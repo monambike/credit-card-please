@@ -215,4 +215,10 @@ Se divirta e se mantenha seguro :D</value>
 
 Repositório do GitHub: https://github.com/monambike/credit-card-please</value>
   </data>
+  <data name="DialogueMonikaDescription" xml:space="preserve">
+    <value>Aqui tá o seu cartão de crédito falso. Mas não fala pra Sayori! ;P *piscadinha*</value>
+  </data>
+  <data name="DialogueMonikaTitle" xml:space="preserve">
+    <value>[GLITCH] Monika.exe está falando com você...</value>
+  </data>
 </root>

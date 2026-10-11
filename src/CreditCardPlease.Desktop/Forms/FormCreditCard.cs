@@ -3,6 +3,7 @@
 // For license information, please see the LICENSE file in the root directory.
 
 using CreditCardPlease.Desktop.Constants;
+using CreditCardPlease.Desktop.Models;
 using CreditCardPlease.Desktop.Resources.Localization;
 
 namespace CreditCardPlease.Desktop
@@ -36,6 +37,16 @@ namespace CreditCardPlease.Desktop
         /// <param name="e"></param>
         private void btnCancel_Click(object sender, EventArgs e) => CancelCreditCardSubmission();
 
+
+        /// <summary>
+        /// Event handler for the "Monika" menu item click event.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void miMonika_Click(object sender, EventArgs e)
+        {
+            SetRandomFakeCreditCardData();
+        }
 
         /// <summary>
         /// Event handler for the "uwu" menu item click event. UwU
@@ -101,7 +112,7 @@ namespace CreditCardPlease.Desktop
         {
             ClearCreditCardFields();
 
-            MessageBox.Show(Strings.DialogSendDescription, Strings.DialogSendTitle, MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show(Strings.DialogSendDescription, $"Sayori: {Strings.DialogSendTitle}", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
         /// <summary>
@@ -111,7 +122,7 @@ namespace CreditCardPlease.Desktop
         {
             DialogResult result = MessageBox.Show(
                 Strings.DialogCancelDescription,
-                Strings.DialogCancelTitle,
+                $"Sayori: {Strings.DialogCancelTitle}",
                 MessageBoxButtons.YesNo,
                 MessageBoxIcon.Warning);
 
@@ -120,7 +131,7 @@ namespace CreditCardPlease.Desktop
                 ClearCreditCardFields();
                 MessageBox.Show(
                     Strings.DialogCancelYesDescription,
-                    Strings.DialogCancelYesTitle,
+                    $"Sayori: {Strings.DialogCancelYesTitle}",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Hand);
             }
@@ -128,7 +139,7 @@ namespace CreditCardPlease.Desktop
             {
                 MessageBox.Show(
                     Strings.DialogCancelNoDescription,
-                    Strings.DialogCancelNoTitle,
+                    $"Sayori: {Strings.DialogCancelNoTitle}",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Information);
             }
@@ -204,6 +215,105 @@ namespace CreditCardPlease.Desktop
             miLanguage.Text = Strings.MenuLanguage;
             miLanguageSystemDefault.Text = $"({Strings.MenuSystemDefault})";
             miAbout.Text = Strings.MenuAbout;
+        }
+
+        /// <summary>
+        /// Sets random fake credit card data in the input fields.
+        /// </summary>
+        private void SetRandomFakeCreditCardData()
+        {
+            txtCardNumber.Text = FakeCreditCardGenerator.GetRandomNumber();
+            txtCardExpirationDate.Text = FakeCreditCardGenerator.GetRandomExpirationDate();
+            txtCardSecurityCode.Text = FakeCreditCardGenerator.GetRandomCVV();
+
+            MessageBox.Show(
+                Strings.DialogueMonikaDescription,
+                Strings.DialogueMonikaTitle,
+                MessageBoxButtons.OK,
+                MessageBoxIcon.Error
+            );
+        }
+
+        private void txtCardNumber_TextChanged(object sender, EventArgs e)
+        {
+            int cursorPosition = txtCardNumber.SelectionStart;
+
+            int digitsBeforeCursor = txtCardNumber.Text
+                .Substring(0, cursorPosition)
+                .Count(char.IsDigit);
+
+            string digits = new string(
+                txtCardNumber.Text
+                    .Where(char.IsDigit)
+                    .Take(16)
+                    .ToArray());
+
+            string formattedNumber = string.Join(" ",
+                Enumerable.Range(0, (digits.Length + 3) / 4)
+                    .Select(i => digits.Substring(
+                        i * 4,
+                        Math.Min(4, digits.Length - i * 4))));
+
+            if (txtCardNumber.Text != formattedNumber)
+            {
+                txtCardNumber.Text = formattedNumber;
+
+                int newCursorPosition = 0;
+                int digitsFound = 0;
+
+                while (newCursorPosition < formattedNumber.Length
+                    && digitsFound < digitsBeforeCursor)
+                {
+                    if (char.IsDigit(formattedNumber[newCursorPosition]))
+                        digitsFound++;
+
+                    newCursorPosition++;
+                }
+
+                txtCardNumber.SelectionStart = newCursorPosition;
+            }
+        }
+
+        private void txtCardExpirationDate_TextChanged(object sender, EventArgs e)
+        {
+            int cursorPosition = txtCardExpirationDate.SelectionStart;
+
+            int digitsBeforeCursor = txtCardExpirationDate.Text
+                .Substring(0, cursorPosition)
+                .Count(char.IsDigit);
+
+            string digits = new string(
+                txtCardExpirationDate.Text
+                    .Where(char.IsDigit)
+                    .Take(4)
+                    .ToArray());
+
+            string formattedDate = digits.Length > 2
+                ? digits.Insert(2, "/")
+                : digits;
+
+            if (txtCardExpirationDate.Text != formattedDate)
+            {
+                txtCardExpirationDate.Text = formattedDate;
+
+                int newCursorPosition = 0;
+                int digitsFound = 0;
+
+                while (newCursorPosition < formattedDate.Length
+                    && digitsFound < digitsBeforeCursor)
+                {
+                    if (char.IsDigit(formattedDate[newCursorPosition]))
+                        digitsFound++;
+
+                    newCursorPosition++;
+                }
+
+                // Keep the cursor after the slash when both month digits are entered.
+                if (digitsBeforeCursor >= 2 && formattedDate.Length > 2)
+                    newCursorPosition = Math.Max(newCursorPosition, 3);
+
+                txtCardExpirationDate.SelectionStart = newCursorPosition;
+            }
         }
     }
 }

@@ -32,6 +32,7 @@
             tlpMain = new TableLayoutPanel();
             msMain = new MenuStrip();
             miApplication = new ToolStripMenuItem();
+            miMonika = new ToolStripMenuItem();
             miUwu = new ToolStripMenuItem();
             miSeparator = new ToolStripSeparator();
             miExit = new ToolStripMenuItem();
@@ -49,10 +50,16 @@
             txtCardSecurityCode = new TextBox();
             txtCardExpirationDate = new TextBox();
             txtCardNumber = new TextBox();
-            lblCardNumber = new Label();
-            lblCardExpirationDate = new Label();
-            lblCardSecurityCode = new Label();
             lblRequiredFields = new Label();
+            flowLayoutPanel2 = new FlowLayoutPanel();
+            lblCardExpirationDateRequired = new Label();
+            lblCardExpirationDate = new Label();
+            flowLayoutPanel3 = new FlowLayoutPanel();
+            lblCardSecurityCodeRequired = new Label();
+            lblCardSecurityCode = new Label();
+            flowLayoutPanel1 = new FlowLayoutPanel();
+            lblCardNumberRequired = new Label();
+            lblCardNumber = new Label();
             lblTitle = new Label();
             lblThanks = new Label();
             lblSeparator = new Label();
@@ -65,6 +72,9 @@
             ((System.ComponentModel.ISupportInitialize)pbImage).BeginInit();
             tlpSubmissionForm.SuspendLayout();
             tlpFields.SuspendLayout();
+            flowLayoutPanel2.SuspendLayout();
+            flowLayoutPanel3.SuspendLayout();
+            flowLayoutPanel1.SuspendLayout();
             tlpFooter.SuspendLayout();
             SuspendLayout();
             // 
@@ -85,9 +95,15 @@
             // 
             // miApplication
             // 
-            miApplication.DropDownItems.AddRange(new ToolStripItem[] { miUwu, miSeparator, miExit });
+            miApplication.DropDownItems.AddRange(new ToolStripItem[] { miMonika, miUwu, miSeparator, miExit });
             miApplication.Name = "miApplication";
             resources.ApplyResources(miApplication, "miApplication");
+            // 
+            // miMonika
+            // 
+            miMonika.Name = "miMonika";
+            resources.ApplyResources(miMonika, "miMonika");
+            miMonika.Click += miMonika_Click;
             // 
             // miUwu
             // 
@@ -176,10 +192,10 @@
             tlpFields.Controls.Add(txtCardSecurityCode, 1, 2);
             tlpFields.Controls.Add(txtCardExpirationDate, 1, 1);
             tlpFields.Controls.Add(txtCardNumber, 1, 0);
-            tlpFields.Controls.Add(lblCardNumber, 0, 0);
-            tlpFields.Controls.Add(lblCardExpirationDate, 0, 1);
-            tlpFields.Controls.Add(lblCardSecurityCode, 0, 2);
             tlpFields.Controls.Add(lblRequiredFields, 0, 3);
+            tlpFields.Controls.Add(flowLayoutPanel2, 0, 1);
+            tlpFields.Controls.Add(flowLayoutPanel3, 0, 2);
+            tlpFields.Controls.Add(flowLayoutPanel1, 0, 0);
             tlpFields.Name = "tlpFields";
             // 
             // txtCardSecurityCode
@@ -191,32 +207,73 @@
             // 
             resources.ApplyResources(txtCardExpirationDate, "txtCardExpirationDate");
             txtCardExpirationDate.Name = "txtCardExpirationDate";
+            txtCardExpirationDate.TextChanged += txtCardExpirationDate_TextChanged;
             // 
             // txtCardNumber
             // 
             resources.ApplyResources(txtCardNumber, "txtCardNumber");
             txtCardNumber.Name = "txtCardNumber";
+            txtCardNumber.TextChanged += txtCardNumber_TextChanged;
             // 
-            // lblCardNumber
+            // lblRequiredFields
             // 
-            resources.ApplyResources(lblCardNumber, "lblCardNumber");
-            lblCardNumber.Name = "lblCardNumber";
+            resources.ApplyResources(lblRequiredFields, "lblRequiredFields");
+            lblRequiredFields.ForeColor = Color.IndianRed;
+            lblRequiredFields.Name = "lblRequiredFields";
+            // 
+            // flowLayoutPanel2
+            // 
+            resources.ApplyResources(flowLayoutPanel2, "flowLayoutPanel2");
+            flowLayoutPanel2.Controls.Add(lblCardExpirationDateRequired);
+            flowLayoutPanel2.Controls.Add(lblCardExpirationDate);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            // 
+            // lblCardExpirationDateRequired
+            // 
+            resources.ApplyResources(lblCardExpirationDateRequired, "lblCardExpirationDateRequired");
+            lblCardExpirationDateRequired.ForeColor = Color.Red;
+            lblCardExpirationDateRequired.Name = "lblCardExpirationDateRequired";
             // 
             // lblCardExpirationDate
             // 
             resources.ApplyResources(lblCardExpirationDate, "lblCardExpirationDate");
             lblCardExpirationDate.Name = "lblCardExpirationDate";
             // 
+            // flowLayoutPanel3
+            // 
+            resources.ApplyResources(flowLayoutPanel3, "flowLayoutPanel3");
+            flowLayoutPanel3.Controls.Add(lblCardSecurityCodeRequired);
+            flowLayoutPanel3.Controls.Add(lblCardSecurityCode);
+            flowLayoutPanel3.Name = "flowLayoutPanel3";
+            // 
+            // lblCardSecurityCodeRequired
+            // 
+            resources.ApplyResources(lblCardSecurityCodeRequired, "lblCardSecurityCodeRequired");
+            lblCardSecurityCodeRequired.ForeColor = Color.Red;
+            lblCardSecurityCodeRequired.Name = "lblCardSecurityCodeRequired";
+            // 
             // lblCardSecurityCode
             // 
             resources.ApplyResources(lblCardSecurityCode, "lblCardSecurityCode");
             lblCardSecurityCode.Name = "lblCardSecurityCode";
             // 
-            // lblRequiredFields
+            // flowLayoutPanel1
             // 
-            resources.ApplyResources(lblRequiredFields, "lblRequiredFields");
-            lblRequiredFields.ForeColor = SystemColors.ControlDarkDark;
-            lblRequiredFields.Name = "lblRequiredFields";
+            resources.ApplyResources(flowLayoutPanel1, "flowLayoutPanel1");
+            flowLayoutPanel1.Controls.Add(lblCardNumberRequired);
+            flowLayoutPanel1.Controls.Add(lblCardNumber);
+            flowLayoutPanel1.Name = "flowLayoutPanel1";
+            // 
+            // lblCardNumberRequired
+            // 
+            resources.ApplyResources(lblCardNumberRequired, "lblCardNumberRequired");
+            lblCardNumberRequired.ForeColor = Color.Red;
+            lblCardNumberRequired.Name = "lblCardNumberRequired";
+            // 
+            // lblCardNumber
+            // 
+            resources.ApplyResources(lblCardNumber, "lblCardNumber");
+            lblCardNumber.Name = "lblCardNumber";
             // 
             // lblTitle
             // 
@@ -276,6 +333,12 @@
             tlpSubmissionForm.PerformLayout();
             tlpFields.ResumeLayout(false);
             tlpFields.PerformLayout();
+            flowLayoutPanel2.ResumeLayout(false);
+            flowLayoutPanel2.PerformLayout();
+            flowLayoutPanel3.ResumeLayout(false);
+            flowLayoutPanel3.PerformLayout();
+            flowLayoutPanel1.ResumeLayout(false);
+            flowLayoutPanel1.PerformLayout();
             tlpFooter.ResumeLayout(false);
             tlpFooter.PerformLayout();
             ResumeLayout(false);
@@ -291,10 +354,6 @@
         private TextBox txtCardSecurityCode;
         private TextBox txtCardExpirationDate;
         private TextBox txtCardNumber;
-        private Label lblCardNumber;
-        private Label lblCardExpirationDate;
-        private Label lblCardSecurityCode;
-        private Label lblRequiredFields;
         private Label lblTitle;
         private Label lblThanks;
         private TableLayoutPanel tlpFooter;
@@ -313,5 +372,16 @@
         private ToolStripMenuItem miLanguagePortuguese;
         private ToolStripMenuItem miAbout;
         private ToolStripMenuItem miDisclaimer;
+        private ToolStripMenuItem miMonika;
+        private FlowLayoutPanel flowLayoutPanel2;
+        private Label lblCardExpirationDateRequired;
+        private FlowLayoutPanel flowLayoutPanel3;
+        private Label lblCardSecurityCodeRequired;
+        private Label lblRequiredFields;
+        private Label lblCardExpirationDate;
+        private Label lblCardSecurityCode;
+        private FlowLayoutPanel flowLayoutPanel1;
+        private Label lblCardNumberRequired;
+        private Label lblCardNumber;
     }
 }
