@@ -22,6 +22,97 @@ namespace CreditCardPlease.Desktop
             UpdateFormLocalization();
         }
 
+        /// <summary>
+        /// Event handler for the Card Number text box text changed event. Formats the card number input with spaces every 4 digits.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtCardNumber_TextChanged(object sender, EventArgs e)
+        {
+            int cursorPosition = txtCardNumber.SelectionStart;
+
+            int digitsBeforeCursor = txtCardNumber.Text
+                .Substring(0, cursorPosition)
+                .Count(char.IsDigit);
+
+            string digits = new string(
+                txtCardNumber.Text
+                    .Where(char.IsDigit)
+                    .Take(16)
+                    .ToArray());
+
+            string formattedNumber = string.Join(" ",
+                Enumerable.Range(0, (digits.Length + 3) / 4)
+                    .Select(i => digits.Substring(
+                        i * 4,
+                        Math.Min(4, digits.Length - i * 4))));
+
+            if (txtCardNumber.Text != formattedNumber)
+            {
+                txtCardNumber.Text = formattedNumber;
+
+                int newCursorPosition = 0;
+                int digitsFound = 0;
+
+                while (newCursorPosition < formattedNumber.Length
+                    && digitsFound < digitsBeforeCursor)
+                {
+                    if (char.IsDigit(formattedNumber[newCursorPosition]))
+                        digitsFound++;
+
+                    newCursorPosition++;
+                }
+
+                txtCardNumber.SelectionStart = newCursorPosition;
+            }
+        }
+
+        /// <summary>
+        /// Event handler for the Card Expiration Date text box text changed event. Formats the expiration date input as MM/YY.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void txtCardExpirationDate_TextChanged(object sender, EventArgs e)
+        {
+            int cursorPosition = txtCardExpirationDate.SelectionStart;
+
+            int digitsBeforeCursor = txtCardExpirationDate.Text
+                .Substring(0, cursorPosition)
+                .Count(char.IsDigit);
+
+            string digits = new string(
+                txtCardExpirationDate.Text
+                    .Where(char.IsDigit)
+                    .Take(4)
+                    .ToArray());
+
+            string formattedDate = digits.Length > 2
+                ? digits.Insert(2, "/")
+                : digits;
+
+            if (txtCardExpirationDate.Text != formattedDate)
+            {
+                txtCardExpirationDate.Text = formattedDate;
+
+                int newCursorPosition = 0;
+                int digitsFound = 0;
+
+                while (newCursorPosition < formattedDate.Length
+                    && digitsFound < digitsBeforeCursor)
+                {
+                    if (char.IsDigit(formattedDate[newCursorPosition]))
+                        digitsFound++;
+
+                    newCursorPosition++;
+                }
+
+                // Keep the cursor after the slash when both month digits are entered.
+                if (digitsBeforeCursor >= 2 && formattedDate.Length > 2)
+                    newCursorPosition = Math.Max(newCursorPosition, 3);
+
+                txtCardExpirationDate.SelectionStart = newCursorPosition;
+            }
+        }
 
         /// <summary>
         /// Event handler for the Send button click event. Sends credit card data.
@@ -35,7 +126,7 @@ namespace CreditCardPlease.Desktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void btnCancel_Click(object sender, EventArgs e) => CancelCreditCardSubmission();
+        private void btnCancel_Click(object sender, EventArgs e) => CancelSubmissionOrExitApplication();
 
 
         /// <summary>
@@ -61,8 +152,7 @@ namespace CreditCardPlease.Desktop
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
-        private void miExit_Click(object sender, EventArgs e)
-            => Application.Exit();
+        private void miExit_Click(object sender, EventArgs e) => ExitApplication();
 
         /// <summary>
         /// Event handler for the System Default language menu item click event. Sets the application language to system default.
@@ -118,6 +208,14 @@ namespace CreditCardPlease.Desktop
         /// <summary>
         /// Cancels the credit card submission and clears the input fields.
         /// </summary>
+        private void CancelSubmissionOrExitApplication()
+        {
+            if (IsCreditCardFieldsEmpty())
+                ExitApplication();
+            else
+                CancelCreditCardSubmission();
+        }
+
         private void CancelCreditCardSubmission()
         {
             DialogResult result = MessageBox.Show(
@@ -153,6 +251,41 @@ namespace CreditCardPlease.Desktop
             txtCardNumber.Clear();
             txtCardExpirationDate.Clear();
             txtCardSecurityCode.Clear();
+        }
+
+        /// <summary>
+        /// Checks if all credit card input fields are empty.
+        /// </summary>
+        /// <returns>Returns true if all fields are empty, false otherwise.</returns>
+        private bool IsCreditCardFieldsEmpty()
+        {
+            var fields = new TextBox[]
+            {
+                txtCardNumber,
+                txtCardExpirationDate,
+                txtCardSecurityCode
+            };
+
+            foreach (var field in fields)
+                if (!string.IsNullOrWhiteSpace(field.Text))
+                    return false;
+
+            return true;
+        }
+
+        /// <summary>
+        /// Exits the application after confirming with the user.
+        /// </summary>
+        private static void ExitApplication()
+        {
+            DialogResult result = MessageBox.Show(
+                Strings.DialogExitDescription,
+                $"Sayori: {Strings.DialogExitTitle}",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Warning);
+
+            if (result == DialogResult.Yes)
+                Application.Exit();
         }
 
 
@@ -227,93 +360,11 @@ namespace CreditCardPlease.Desktop
             txtCardSecurityCode.Text = FakeCreditCardGenerator.GetRandomCVV();
 
             MessageBox.Show(
-                Strings.DialogueMonikaDescription,
-                Strings.DialogueMonikaTitle,
+                Strings.DialogMonikaDescription,
+                Strings.DialogMonikaTitle,
                 MessageBoxButtons.OK,
                 MessageBoxIcon.Error
             );
-        }
-
-        private void txtCardNumber_TextChanged(object sender, EventArgs e)
-        {
-            int cursorPosition = txtCardNumber.SelectionStart;
-
-            int digitsBeforeCursor = txtCardNumber.Text
-                .Substring(0, cursorPosition)
-                .Count(char.IsDigit);
-
-            string digits = new string(
-                txtCardNumber.Text
-                    .Where(char.IsDigit)
-                    .Take(16)
-                    .ToArray());
-
-            string formattedNumber = string.Join(" ",
-                Enumerable.Range(0, (digits.Length + 3) / 4)
-                    .Select(i => digits.Substring(
-                        i * 4,
-                        Math.Min(4, digits.Length - i * 4))));
-
-            if (txtCardNumber.Text != formattedNumber)
-            {
-                txtCardNumber.Text = formattedNumber;
-
-                int newCursorPosition = 0;
-                int digitsFound = 0;
-
-                while (newCursorPosition < formattedNumber.Length
-                    && digitsFound < digitsBeforeCursor)
-                {
-                    if (char.IsDigit(formattedNumber[newCursorPosition]))
-                        digitsFound++;
-
-                    newCursorPosition++;
-                }
-
-                txtCardNumber.SelectionStart = newCursorPosition;
-            }
-        }
-
-        private void txtCardExpirationDate_TextChanged(object sender, EventArgs e)
-        {
-            int cursorPosition = txtCardExpirationDate.SelectionStart;
-
-            int digitsBeforeCursor = txtCardExpirationDate.Text
-                .Substring(0, cursorPosition)
-                .Count(char.IsDigit);
-
-            string digits = new string(
-                txtCardExpirationDate.Text
-                    .Where(char.IsDigit)
-                    .Take(4)
-                    .ToArray());
-
-            string formattedDate = digits.Length > 2
-                ? digits.Insert(2, "/")
-                : digits;
-
-            if (txtCardExpirationDate.Text != formattedDate)
-            {
-                txtCardExpirationDate.Text = formattedDate;
-
-                int newCursorPosition = 0;
-                int digitsFound = 0;
-
-                while (newCursorPosition < formattedDate.Length
-                    && digitsFound < digitsBeforeCursor)
-                {
-                    if (char.IsDigit(formattedDate[newCursorPosition]))
-                        digitsFound++;
-
-                    newCursorPosition++;
-                }
-
-                // Keep the cursor after the slash when both month digits are entered.
-                if (digitsBeforeCursor >= 2 && formattedDate.Length > 2)
-                    newCursorPosition = Math.Max(newCursorPosition, 3);
-
-                txtCardExpirationDate.SelectionStart = newCursorPosition;
-            }
         }
     }
 }

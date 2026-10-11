@@ -61,7 +61,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Cancel.
+        ///   Looks up a localized string similar to &amp;Cancel.
         /// </summary>
         internal static string CardFormCancel {
             get {
@@ -106,7 +106,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Send Data.
+        ///   Looks up a localized string similar to S&amp;end Data.
         /// </summary>
         internal static string CardFormSendData {
             get {
@@ -244,6 +244,42 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You really want to exit? 😿.
+        /// </summary>
+        internal static string DialogExitDescription {
+            get {
+                return ResourceManager.GetString("DialogExitDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I&apos;ll miss you....
+        /// </summary>
+        internal static string DialogExitTitle {
+            get {
+                return ResourceManager.GetString("DialogExitTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Here&apos;s your fake credit card information. But don&apos;t tell Sayori ;P wink wink!.
+        /// </summary>
+        internal static string DialogMonikaDescription {
+            get {
+                return ResourceManager.GetString("DialogMonikaDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to [GLITCH] Monika.exe is contacting you....
+        /// </summary>
+        internal static string DialogMonikaTitle {
+            get {
+                return ResourceManager.GetString("DialogMonikaTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to T-Thank you so much! &gt;\\\\~\\\\&lt;
         ///
         ///Your credit card data is in good hands! ❤️.
@@ -264,25 +300,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Here&apos;s your fake credit card information. But don&apos;t tell Sayori ;P wink wink!.
-        /// </summary>
-        internal static string DialogueMonikaDescription {
-            get {
-                return ResourceManager.GetString("DialogueMonikaDescription", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to [GLITCH] Monika.exe is contacting you....
-        /// </summary>
-        internal static string DialogueMonikaTitle {
-            get {
-                return ResourceManager.GetString("DialogueMonikaTitle", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to About.
+        ///   Looks up a localized string similar to A&amp;bout.
         /// </summary>
         internal static string MenuAbout {
             get {
@@ -291,7 +309,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Application.
+        ///   Looks up a localized string similar to &amp;Application.
         /// </summary>
         internal static string MenuApplication {
             get {
@@ -300,7 +318,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Disclaimer.
+        ///   Looks up a localized string similar to &amp;Disclaimer.
         /// </summary>
         internal static string MenuDisclaimer {
             get {
@@ -309,7 +327,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Exit.
+        ///   Looks up a localized string similar to &amp;Exit.
         /// </summary>
         internal static string MenuExit {
             get {
@@ -318,7 +336,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Language.
+        ///   Looks up a localized string similar to &amp;Language.
         /// </summary>
         internal static string MenuLanguage {
             get {
@@ -327,7 +345,7 @@ namespace CreditCardPlease.Desktop.Resources.Localization {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Settings.
+        ///   Looks up a localized string similar to &amp;Settings.
         /// </summary>
         internal static string MenuSettings {
             get {

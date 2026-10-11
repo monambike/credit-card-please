@@ -140,7 +140,7 @@ Seus dados do cartão de crédito estão em boas mãos! ❤️</value>
     <value>Eu não posso crer que você realmente fez isso!</value>
   </data>
   <data name="CardFormTitle" xml:space="preserve">
-    <value>O-olá!
+    <value>O-Olá!
 V-Você poderia fornecer seus
 dados do cartão de crédito, porfavorzinho?</value>
   </data>
@@ -163,7 +163,7 @@ dados do cartão de crédito, porfavorzinho?</value>
     <value>&amp;Enviar Dados</value>
   </data>
   <data name="CardFormCancel" xml:space="preserve">
-    <value>&amp;Cancelar</value>
+    <value>Ca&amp;ncelar</value>
   </data>
   <data name="CreditCardWindowTitle" xml:space="preserve">
     <value>E-eu preciso desses dados... Por favor...</value>
@@ -175,22 +175,22 @@ dados do cartão de crédito, porfavorzinho?</value>
     <value>:( O que você fez?...</value>
   </data>
   <data name="MenuAbout" xml:space="preserve">
-    <value>Sobre</value>
+    <value>&amp;Sobre</value>
   </data>
   <data name="MenuSettings" xml:space="preserve">
-    <value>Configurações</value>
+    <value>&amp;Configurações</value>
   </data>
   <data name="MenuLanguage" xml:space="preserve">
-    <value>Idioma</value>
+    <value>&amp;Idioma</value>
   </data>
   <data name="MenuSystemDefault" xml:space="preserve">
     <value>Padrão do Sistema</value>
   </data>
   <data name="MenuExit" xml:space="preserve">
-    <value>Sair</value>
+    <value>&amp;Sair</value>
   </data>
   <data name="MenuApplication" xml:space="preserve">
-    <value>Aplicativo</value>
+    <value>&amp;Aplicativo</value>
   </data>
   <data name="DialogDisclaimerDescription" xml:space="preserve">
     <value>O óbvio precisa ser dito, não envie dados do seu cartão de crédito pra ninguém.
@@ -202,7 +202,7 @@ Você pode pode usar sites como "https://www.getcreditcardnumbers.com/" para ger
 Se divirta e se mantenha seguro :D</value>
   </data>
   <data name="MenuDisclaimer" xml:space="preserve">
-    <value>Disclaimer</value>
+    <value>&amp;Disclaimer</value>
   </data>
   <data name="DialogDisclaimerTitle" xml:space="preserve">
     <value>Aviso</value>
@@ -215,10 +215,16 @@ Se divirta e se mantenha seguro :D</value>
 
 Repositório do GitHub: https://github.com/monambike/credit-card-please</value>
   </data>
-  <data name="DialogueMonikaDescription" xml:space="preserve">
+  <data name="DialogMonikaDescription" xml:space="preserve">
     <value>Aqui tá o seu cartão de crédito falso. Mas não fala pra Sayori! ;P *piscadinha*</value>
   </data>
-  <data name="DialogueMonikaTitle" xml:space="preserve">
+  <data name="DialogMonikaTitle" xml:space="preserve">
     <value>[GLITCH] Monika.exe está falando com você...</value>
+  </data>
+  <data name="DialogExitDescription" xml:space="preserve">
+    <value>Você quer sair mesmo? 😿</value>
+  </data>
+  <data name="DialogExitTitle" xml:space="preserve">
+    <value>Vou sentir sua falta...</value>
   </data>
 </root>

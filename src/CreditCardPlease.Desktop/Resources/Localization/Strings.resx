@@ -160,10 +160,10 @@ credit card info, pretty please?</value>
     <value>Required Fields</value>
   </data>
   <data name="CardFormSendData" xml:space="preserve">
-    <value>Send Data</value>
+    <value>S&amp;end Data</value>
   </data>
   <data name="CardFormCancel" xml:space="preserve">
-    <value>Cancel</value>
+    <value>&amp;Cancel</value>
   </data>
   <data name="CreditCardWindowTitle" xml:space="preserve">
     <value>I-I need that data... Please...</value>
@@ -175,22 +175,22 @@ credit card info, pretty please?</value>
     <value>:( What you've done?...</value>
   </data>
   <data name="MenuAbout" xml:space="preserve">
-    <value>About</value>
+    <value>A&amp;bout</value>
   </data>
   <data name="MenuSettings" xml:space="preserve">
-    <value>Settings</value>
+    <value>&amp;Settings</value>
   </data>
   <data name="MenuLanguage" xml:space="preserve">
-    <value>Language</value>
+    <value>&amp;Language</value>
   </data>
   <data name="MenuSystemDefault" xml:space="preserve">
     <value>System Default</value>
   </data>
   <data name="MenuExit" xml:space="preserve">
-    <value>Exit</value>
+    <value>&amp;Exit</value>
   </data>
   <data name="MenuApplication" xml:space="preserve">
-    <value>Application</value>
+    <value>&amp;Application</value>
   </data>
   <data name="DialogDisclaimerDescription" xml:space="preserve">
     <value>The obvious must be stated, don't send your credit card information to anyone.
@@ -202,7 +202,7 @@ You can use websites like "https://www.getcreditcardnumbers.com/" to generate fa
 Have fun and stay safe :D</value>
   </data>
   <data name="MenuDisclaimer" xml:space="preserve">
-    <value>Disclaimer</value>
+    <value>&amp;Disclaimer</value>
   </data>
   <data name="DialogDisclaimerTitle" xml:space="preserve">
     <value>Disclaimer</value>
@@ -215,10 +215,16 @@ Have fun and stay safe :D</value>
 
 GitHub Repository: https://github.com/monambike/credit-card-please</value>
   </data>
-  <data name="DialogueMonikaDescription" xml:space="preserve">
+  <data name="DialogMonikaDescription" xml:space="preserve">
     <value>Here's your fake credit card information. But don't tell Sayori ;P wink wink!</value>
   </data>
-  <data name="DialogueMonikaTitle" xml:space="preserve">
+  <data name="DialogMonikaTitle" xml:space="preserve">
     <value>[GLITCH] Monika.exe is contacting you...</value>
+  </data>
+  <data name="DialogExitDescription" xml:space="preserve">
+    <value>You really want to exit? 😿</value>
+  </data>
+  <data name="DialogExitTitle" xml:space="preserve">
+    <value>I'll miss you...</value>
   </data>
 </root>
