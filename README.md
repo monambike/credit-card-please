@@ -7,11 +7,11 @@
 
 The classic Sayori Credit Card meme has become real!
 
-<img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/fdc915b4-6355-4e39-b2d5-424474b17027" />
+<img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/8a0698de-da5a-4790-afb0-211e4a3feec0" />
 
 ## (PT-br) Portuguese Interface
 
-<img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/8c88dbd1-68af-4b55-a5e0-390d0849f3a8" />
+<img width="1147" height="797" alt="image" src="https://github.com/user-attachments/assets/d7d77654-46eb-48e3-9b81-117e982470d3" />
 
 # Download
 
