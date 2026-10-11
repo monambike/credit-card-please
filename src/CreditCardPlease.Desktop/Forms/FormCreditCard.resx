@@ -126,22 +126,22 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="miMonika.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="miMonika.Text" xml:space="preserve">
     <value>Monika</value>
   </data>
   <data name="miUwu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="miUwu.Text" xml:space="preserve">
     <value>uwu</value>
   </data>
   <data name="miSeparator.Size" type="System.Drawing.Size, System.Drawing">
-    <value>111, 6</value>
+    <value>177, 6</value>
   </data>
   <data name="miExit.Size" type="System.Drawing.Size, System.Drawing">
-    <value>114, 22</value>
+    <value>180, 22</value>
   </data>
   <data name="miExit.Text" xml:space="preserve">
     <value>Exit</value>
@@ -201,7 +201,7 @@
     <value>800, 24</value>
   </data>
   <data name="msMain.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
+    <value>0</value>
   </data>
   <data name="msMain.Text" xml:space="preserve">
     <value>menuStrip1</value>
@@ -271,7 +271,7 @@
     <value>51, 27</value>
   </data>
   <data name="txtCardSecurityCode.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="&gt;&gt;txtCardSecurityCode.Name" xml:space="preserve">
     <value>txtCardSecurityCode</value>
@@ -301,7 +301,7 @@
     <value>100, 27</value>
   </data>
   <data name="txtCardExpirationDate.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;txtCardExpirationDate.Name" xml:space="preserve">
     <value>txtCardExpirationDate</value>
@@ -331,7 +331,7 @@
     <value>173, 27</value>
   </data>
   <data name="txtCardNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="&gt;&gt;txtCardNumber.Name" xml:space="preserve">
     <value>txtCardNumber</value>
@@ -364,7 +364,7 @@
     <value>136, 37</value>
   </data>
   <data name="lblRequiredFields.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>0</value>
   </data>
   <data name="lblRequiredFields.Text" xml:space="preserve">
     <value>* Required Fields</value>
@@ -452,7 +452,7 @@
     <value>115, 20</value>
   </data>
   <data name="lblCardExpirationDate.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>0</value>
   </data>
   <data name="lblCardExpirationDate.Text" xml:space="preserve">
     <value>Expiration Date:</value>
@@ -563,7 +563,7 @@
     <value>103, 20</value>
   </data>
   <data name="lblCardSecurityCode.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+    <value>0</value>
   </data>
   <data name="lblCardSecurityCode.Text" xml:space="preserve">
     <value>Security Code:</value>
@@ -635,7 +635,7 @@
     <value>15, 20</value>
   </data>
   <data name="lblCardNumberRequired.TabIndex" type="System.Int32, mscorlib">
-    <value>13</value>
+    <value>0</value>
   </data>
   <data name="lblCardNumberRequired.Text" xml:space="preserve">
     <value>*</value>
@@ -674,7 +674,7 @@
     <value>101, 20</value>
   </data>
   <data name="lblCardNumber.TabIndex" type="System.Int32, mscorlib">
-    <value>14</value>
+    <value>0</value>
   </data>
   <data name="lblCardNumber.Text" xml:space="preserve">
     <value>Card Number:</value>
@@ -728,7 +728,7 @@
     <value>385, 145</value>
   </data>
   <data name="tlpFields.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
+    <value>2</value>
   </data>
   <data name="&gt;&gt;tlpFields.Name" xml:space="preserve">
     <value>tlpFields</value>
@@ -764,7 +764,7 @@
     <value>385, 151</value>
   </data>
   <data name="lblTitle.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="lblTitle.Text" xml:space="preserve">
     <value>H-Hello!
@@ -805,7 +805,7 @@ credit card info, pretty please?</value>
     <value>385, 70</value>
   </data>
   <data name="lblThanks.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="lblThanks.Text" xml:space="preserve">
     <value>T-Thanks!</value>
@@ -928,7 +928,7 @@ credit card info, pretty please?</value>
     <value>75, 29</value>
   </data>
   <data name="btnCancel.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
+    <value>5</value>
   </data>
   <data name="btnCancel.Text" xml:space="preserve">
     <value>&amp;Cancel</value>
@@ -958,7 +958,7 @@ credit card info, pretty please?</value>
     <value>82, 29</value>
   </data>
   <data name="btnSend.TabIndex" type="System.Int32, mscorlib">
-    <value>7</value>
+    <value>4</value>
   </data>
   <data name="btnSend.Text" xml:space="preserve">
     <value>&amp;Send Data</value>
